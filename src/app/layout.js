@@ -1,19 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/common/navbar/Navbar";
 // Removed import of @studio-freight/react-lenis due to error
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
+// Removed import of next/font/google due to error
 
 export const metadata = {
   title: "Create Next App",
@@ -23,10 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        suppressHydrationWarning={true}
-      >
+      <body className="antialiased" suppressHydrationWarning={true}>
         {/* Removed <ReactLenis root> due to error */}
         <header>
           <Navbar />
