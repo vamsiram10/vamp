@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Navbar } from "@/components/common/navbar/Navbar";
+import Navbar from "@/components/common/navbar/Navbar";
 // Removed import of @studio-freight/react-lenis due to error
 // Removed import of next/font/google due to error
 
