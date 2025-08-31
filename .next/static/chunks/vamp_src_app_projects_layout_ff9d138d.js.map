@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/app/projects/layout.js"],"sourcesContent":["\"use client\";\nimport Lenis from \"@studio-freight/lenis\";\n\nfunction ProjectsLayout({ children }) {\n  return (\n    <ReactLenis root>\n      <main className=\"min-h-[100vh] w-screen overflow-x-hidden bg-black\">\n        {children}\n      </main>\n    </ReactLenis>\n  );\n}\n\nexport default ProjectsLayout;\n"],"names":[],"mappings":";;;;;AAAA;;;AAGA,SAAS,eAAe,KAAY;QAAZ,EAAE,QAAQ,EAAE,GAAZ;IACtB,qBACE,qMAAC;QAAW,IAAI;kBACd,cAAA,qMAAC;YAAK,WAAU;sBACb;;;;;;;;;;;AAIT;KARS;uCAUM","debugId":null}}]
+}

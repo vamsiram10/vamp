@@ -1,5 +1,6 @@
 "use client";
-import { Lenis as ReactLenis, useLenis } from "@studio-freight/react-lenis";
+import Lenis from "@studio-freight/lenis";
+
 function ProjectsLayout({ children }) {
   return (
     <ReactLenis root>
