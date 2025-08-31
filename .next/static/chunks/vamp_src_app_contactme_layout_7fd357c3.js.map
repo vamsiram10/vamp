@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/app/contactme/layout.js"],"sourcesContent":["\"use client\";\n\nfunction ContactLayout({ children }) {\n  return (\n    <main className=\"min-h-[100vh] w-screen overflow-x-hidden bg-black\">\n      {children}\n    </main>\n  );\n}\n\nexport default ContactLayout;\n"],"names":[],"mappings":";;;;;AAAA;;AAEA,SAAS,cAAc,KAAY;QAAZ,EAAE,QAAQ,EAAE,GAAZ;IACrB,qBACE,qMAAC;QAAK,WAAU;kBACb;;;;;;AAGP;KANS;uCAQM","debugId":null}}]
+}

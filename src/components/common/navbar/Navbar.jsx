@@ -78,7 +78,7 @@ export function Navbar() {
     },
     {
       name: "Contact Me",
-      link: "/contact",
+      link: "/contactme",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),

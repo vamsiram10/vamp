@@ -1,6 +1,6 @@
 {
   "pages": {
-    "/_not-found/page": [
+    "/contactme/page": [
       "static/chunks/15bfa_next_dist_23cf49ea._.js",
       "static/chunks/vamp_src_app_favicon_ico_mjs_d603a694._.js",
       "static/chunks/vamp_src_app_globals_b713e58f.css",
@@ -9,6 +9,13 @@
       "static/chunks/15bfa_fd704455._.js",
       "static/chunks/vamp_src_components_common_navbar_Navbar_jsx_85dbf4c7._.js",
       "static/chunks/vamp_src_app_layout_a6560978.js",
+      "static/chunks/15bfa_next_dist_client_components_builtin_global-error_3462a7eb.js",
+      "static/chunks/vamp_src_app_contactme_layout_7fd357c3.js",
+      "static/chunks/vamp_src_app_contactme_layout_3462a7eb.js",
+      "static/chunks/15bfa_react-icons_fa_index_mjs_84ce772a._.js",
+      "static/chunks/15bfa_738fb92b._.js",
+      "static/chunks/vamp_src_components_section_contactsection_ContactMe_jsx_b1c92f46._.js",
+      "static/chunks/vamp_src_app_contactme_page_707f75ad.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d206f8e6._.js",
       "static/chunks/15bfa_next_dist_compiled_react-dom_e86ea7c7._.js",
       "static/chunks/15bfa_next_dist_compiled_next-devtools_index_de54cfaa.js",
