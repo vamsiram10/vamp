@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,12875,e=>{"use strict";e.s(["default",()=>c]);var t=e.i(25683);let c=function(e){let{children:c}=e;return(0,t.jsx)("main",{className:"min-h-[100vh] w-screen overflow-x-hidden bg-black",children:c})}}]);
