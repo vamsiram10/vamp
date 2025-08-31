@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/common/navbar/Navbar";
-import { Lenis as ReactLenis, useLenis } from "@studio-freight/react-lenis";
+// Removed import of @studio-freight/react-lenis due to error
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +27,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <ReactLenis root>
-          <header>
-            <Navbar />
-          </header>
-          {children}
-        </ReactLenis>
+        {/* Removed <ReactLenis root> due to error */}
+        <header>
+          <Navbar />
+        </header>
+        {children}
+        {/* End of removed <ReactLenis root> */}
       </body>
     </html>
   );

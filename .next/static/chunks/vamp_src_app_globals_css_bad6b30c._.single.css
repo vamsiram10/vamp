@@ -907,10 +907,6 @@
     color: var(--color-yellow-400);
   }
 
-  .lowercase {
-    text-transform: lowercase;
-  }
-
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
