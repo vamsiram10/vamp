@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { LiaProjectDiagramSolid } from "react-icons/lia";
 
 export function Navbar() {
   // Sound effect: a short click sound (public domain)
@@ -19,8 +20,18 @@ export function Navbar() {
   };
 
   // Navbar show/hide on scroll
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false); // Start hidden for transition
   const lastScrollY = useRef(0);
+
+  // For opening transition
+  useEffect(() => {
+    // Add a slight delay before showing the navbar for a smooth opening transition
+    const timer = setTimeout(() => {
+      setShowNavbar(true);
+    }, 200); // 200ms delay before opening
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -56,13 +67,13 @@ export function Navbar() {
       name: "Projects",
       link: "/projects",
       icon: (
-        <span className="h-4 w-4 text-neutral-500 dark:text-white">📁</span>
+        <LiaProjectDiagramSolid className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
       // The Projects page is linked to src/components/section/projectssection/Projects.jsx
     },
     {
       name: "About Me",
-      link: "/about",
+      link: "/aboutme",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {

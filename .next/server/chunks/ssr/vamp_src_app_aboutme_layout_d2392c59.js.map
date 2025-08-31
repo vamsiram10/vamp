@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/app/aboutme/layout.js"],"sourcesContent":["\"use client\";\n\nfunction AboutLayout({ children }) {\n  return (\n    <main className=\"min-h-[100vh] w-screen overflow-x-hidden bg-black\">\n      {children}\n    </main>\n  );\n}\n\nexport default AboutLayout;\n"],"names":[],"mappings":";;;;;AAAA;;AAEA,SAAS,YAAY,EAAE,QAAQ,EAAE;IAC/B,qBACE,sPAAC;QAAK,WAAU;kBACb;;;;;;AAGP;uCAEe","debugId":null}}]
+}

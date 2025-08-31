@@ -38,7 +38,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next
 var __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHome$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHome$3e$__ = __turbopack_context__.i("[project]/vamp/node_modules/@tabler/icons-react/dist/esm/icons/IconHome.mjs [app-ssr] (ecmascript) <export default as IconHome>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMessage$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMessage$3e$__ = __turbopack_context__.i("[project]/vamp/node_modules/@tabler/icons-react/dist/esm/icons/IconMessage.mjs [app-ssr] (ecmascript) <export default as IconMessage>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconUser$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconUser$3e$__ = __turbopack_context__.i("[project]/vamp/node_modules/@tabler/icons-react/dist/esm/icons/IconUser.mjs [app-ssr] (ecmascript) <export default as IconUser>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$react$2d$icons$2f$lia$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/vamp/node_modules/react-icons/lia/index.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -55,8 +57,16 @@ function Navbar() {
         }
     };
     // Navbar show/hide on scroll
-    const [showNavbar, setShowNavbar] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [showNavbar, setShowNavbar] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false); // Start hidden for transition
     const lastScrollY = (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(0);
+    // For opening transition
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        // Add a slight delay before showing the navbar for a smooth opening transition
+        const timer = setTimeout(()=>{
+            setShowNavbar(true);
+        }, 200); // 200ms delay before opening
+        return ()=>clearTimeout(timer);
+    }, []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if ("TURBOPACK compile-time truthy", 1) return;
         //TURBOPACK unreachable
@@ -71,30 +81,29 @@ function Navbar() {
                 className: "h-4 w-4 text-neutral-500 dark:text-white"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 53,
+                lineNumber: 64,
                 columnNumber: 13
             }, this)
         },
         {
             name: "Projects",
             link: "/projects",
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "h-4 w-4 text-neutral-500 dark:text-white",
-                children: "📁"
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$react$2d$icons$2f$lia$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LiaProjectDiagramSolid"], {
+                className: "h-4 w-4 text-neutral-500 dark:text-white"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 59,
+                lineNumber: 70,
                 columnNumber: 9
             }, this)
         },
         {
             name: "About Me",
-            link: "/about",
+            link: "/aboutme",
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconUser$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconUser$3e$__["IconUser"], {
                 className: "h-4 w-4 text-neutral-500 dark:text-white"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 66,
+                lineNumber: 77,
                 columnNumber: 13
             }, this)
         },
@@ -105,7 +114,7 @@ function Navbar() {
                 className: "h-4 w-4 text-neutral-500 dark:text-white"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 72,
+                lineNumber: 83,
                 columnNumber: 9
             }, this)
         }
@@ -128,23 +137,23 @@ function Navbar() {
                             children: item.name
                         }, void 0, false, {
                             fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                            lineNumber: 95,
+                            lineNumber: 106,
                             columnNumber: 13
                         }, this)
                     ]
                 }, item.name, true, {
                     fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                    lineNumber: 88,
+                    lineNumber: 99,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-            lineNumber: 79,
+            lineNumber: 90,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-        lineNumber: 78,
+        lineNumber: 89,
         columnNumber: 5
     }, this);
 }

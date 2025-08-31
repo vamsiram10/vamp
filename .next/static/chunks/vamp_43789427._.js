@@ -20,6 +20,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function Navbar() {
     _s();
     // Sound effect: a short click sound (public domain)
@@ -73,7 +74,7 @@ function Navbar() {
                 className: "h-4 w-4 text-neutral-500 dark:text-white"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 53,
+                lineNumber: 54,
                 columnNumber: 13
             }, this)
         },
@@ -85,18 +86,18 @@ function Navbar() {
                 children: "📁"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 59,
+                lineNumber: 60,
                 columnNumber: 9
             }, this)
         },
         {
             name: "About Me",
-            link: "/about",
+            link: "/aboutme",
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconUser$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconUser$3e$__["IconUser"], {
                 className: "h-4 w-4 text-neutral-500 dark:text-white"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 66,
+                lineNumber: 67,
                 columnNumber: 13
             }, this)
         },
@@ -107,7 +108,7 @@ function Navbar() {
                 className: "h-4 w-4 text-neutral-500 dark:text-white"
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 72,
+                lineNumber: 73,
                 columnNumber: 9
             }, this)
         }
@@ -130,23 +131,23 @@ function Navbar() {
                             children: item.name
                         }, void 0, false, {
                             fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                            lineNumber: 95,
+                            lineNumber: 96,
                             columnNumber: 13
                         }, this)
                     ]
                 }, item.name, true, {
                     fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                    lineNumber: 88,
+                    lineNumber: 89,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-            lineNumber: 79,
+            lineNumber: 80,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-        lineNumber: 78,
+        lineNumber: 79,
         columnNumber: 5
     }, this);
 }
