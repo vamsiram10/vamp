@@ -6,18 +6,9 @@
   "rootMainFiles": [],
   "pages": {
     "/_error": [
-      "static/chunks/15bfa_next_dist_compiled_next-devtools_index_9c3b7c51.js",
-      "static/chunks/15bfa_next_dist_compiled_9d3bb965._.js",
-      "static/chunks/15bfa_next_dist_shared_lib_e8eee944._.js",
-      "static/chunks/15bfa_next_dist_client_346ad774._.js",
-      "static/chunks/15bfa_next_dist_ebe38dbd._.js",
-      "static/chunks/15bfa_next_error_4f2eb8cf.js",
-      "static/chunks/[next]_entry_page-loader_ts_d832801e._.js",
-      "static/chunks/15bfa_react-dom_69e98c40._.js",
-      "static/chunks/15bfa_90b067fd._.js",
-      "static/chunks/[root-of-the-server]__7aaf324c._.js",
-      "static/chunks/vamp_pages__error_2da965e7._.js",
-      "static/chunks/turbopack-vamp_pages__error_2b091933._.js"
+      "static/chunks/6a7d07d471b26365.js",
+      "static/chunks/7afcb0915a38b676.js",
+      "static/chunks/turbopack-847ccb1c0ee36a49.js"
     ]
   },
   "ampFirstPages": []

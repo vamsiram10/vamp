@@ -1,22 +1,3 @@
-module.exports = [
-"[project]/vamp/src/app/favicon.ico (static in ecmascript)", ((__turbopack_context__) => {
-
-__turbopack_context__.v("/_next/static/media/favicon.0b3bf435.ico");}),
-"[project]/vamp/src/app/favicon.ico.mjs { IMAGE => \"[project]/vamp/src/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "default",
-    ()=>__TURBOPACK__default__export__
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$src$2f$app$2f$favicon$2e$ico__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/vamp/src/app/favicon.ico (static in ecmascript)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$src$2f$app$2f$favicon$2e$ico__$28$static__in__ecmascript$29$__["default"],
-    width: 256,
-    height: 256
-};
-}),
-];
+module.exports=[28569,a=>{a.v("/_next/static/media/favicon.0b3bf435.ico")},62254,a=>{"use strict";a.s(["default",()=>b]);let b={src:a.i(28569).default,width:256,height:256}}];
 
 //# sourceMappingURL=vamp_src_app_a1a91d67._.js.map
