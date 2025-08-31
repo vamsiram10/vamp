@@ -8,6 +8,9 @@ import HomeEventCard from "@/snippets/homeeventcard/HomeEventCard";
 import "./projects.css";
 import AnimatedTitle from "@/components/utils/animatedtitle/AnimatedTitle";
 
+// Register GSAP plugins
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 // Each project now includes a pentagon graph data for skills used in that project
 const cardProjects = [
   {

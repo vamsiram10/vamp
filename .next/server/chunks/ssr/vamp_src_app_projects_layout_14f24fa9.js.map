@@ -1,1 +1,6 @@
-{"version":3,"sources":["turbopack:///[project]/vamp/src/app/projects/layout.js"],"sourcesContent":["\"use client\";\n\nfunction ProjectsLayout({ children }) {\n  return (\n    <main className=\"min-h-[100vh] w-screen overflow-x-hidden bg-black\">\n      {children}\n    </main>\n  );\n}\n\nexport default ProjectsLayout;\n"],"names":[],"mappings":"qFAEA,SAAS,AAAe,UAAE,CAAQ,CAAE,EAClC,MACE,CAAA,CAMW,CANX,EAAA,GAAA,EAAC,OAAA,CAAK,UAAU,6DACb,GAGP"}
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/app/projects/layout.js"],"sourcesContent":["\"use client\";\n\nfunction ProjectsLayout({ children }) {\n  return (\n    <main className=\"min-h-[100vh] w-screen overflow-x-hidden bg-black\">\n      {children}\n    </main>\n  );\n}\n\nexport default ProjectsLayout;\n"],"names":[],"mappings":";;;;;AAAA;;AAEA,SAAS,eAAe,EAAE,QAAQ,EAAE;IAClC,qBACE,sPAAC;QAAK,WAAU;kBACb;;;;;;AAGP;uCAEe","debugId":null}}]
+}

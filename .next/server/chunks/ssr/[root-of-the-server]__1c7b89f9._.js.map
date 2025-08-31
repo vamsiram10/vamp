@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx"],"sourcesContent":["import React from \"react\";\n\nconst HomeAbout = () => {\n  return (\n    <section className=\"flex flex-col items-center justify-center px-4 py-16 min-h-[100vh] w-full bg-black\">\n      <h1 className=\"mb-4 text-4xl font-extrabold text-white text-center sm:text-5xl\">\n        <span className=\"text-blue-400\">VENKATA RAMA VAMSI</span>\n      </h1>\n    </section>\n  );\n};\n\nexport default HomeAbout;\n"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,YAAY;IAChB,qBACE,sPAAC;QAAQ,WAAU;kBACjB,cAAA,sPAAC;YAAG,WAAU;sBACZ,cAAA,sPAAC;gBAAK,WAAU;0BAAgB;;;;;;;;;;;;;;;;AAIxC;uCAEe","debugId":null}},
+    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/app/page.js"],"sourcesContent":["import HomeAbout from \"@/components/section/homesection/homeabout/HomeAbout\";\n\nexport default function Home() {\n  return (\n    <main>\n      {/* Home page content goes here */}\n      <HomeAbout />\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,sPAAC;kBAEC,cAAA,sPAAC,yLAAS;;;;;;;;;;AAGhB","debugId":null}}]
+}

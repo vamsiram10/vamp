@@ -90,31 +90,39 @@ export default function HomePage() {
     { scope: mainContainer }
   );
 
+  // Remove the effect that hides scrollbars and disables scrolling
   useEffect(() => {
-    // Hide scrollbars on body for this page
-    const originalOverflow = document.body.style.overflow;
-    const originalOverflowX = document.body.style.overflowX;
-    const originalOverflowY = document.body.style.overflowY;
-    document.body.style.overflow = "hidden";
-    document.body.style.overflowX = "hidden";
-    document.body.style.overflowY = "hidden";
-
     return () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
-      // Restore original overflow styles
-      document.body.style.overflow = originalOverflow;
-      document.body.style.overflowX = originalOverflowX;
-      document.body.style.overflowY = originalOverflowY;
     };
   }, []);
 
   return (
     <main
       ref={mainContainer}
-      className="relative min-h-screen w-screen overflow-x-hidden overflow-y-hidden"
-      style={{ overflow: "hidden" }}
+      className="relative min-h-screen w-screen overflow-x-hidden"
+      style={{
+        overflowY: "auto",
+        overflowX: "hidden",
+        scrollbarWidth: "none", // For Firefox
+        msOverflowStyle: "none", // For IE and Edge
+      }}
     >
+      {/* Hide scrollbar for all browsers */}
+      <style>
+        {`
+          main::-webkit-scrollbar {
+            display: none;
+          }
+          main {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+          }
+        `}
+      </style>
       <Projects ref={cardRefs} />
+      {/* Add a spacer div to allow scrolling */}
+      <div style={{ height: `200vh` }} />
     </main>
   );
 }
