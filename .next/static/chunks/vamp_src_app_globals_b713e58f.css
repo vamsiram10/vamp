@@ -768,10 +768,6 @@
     z-index: calc(10 * -1);
   }
 
-  .-z-20 {
-    z-index: calc(20 * -1);
-  }
-
   .z-0 {
     z-index: 0;
   }

@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/app/projects/layout.js"],"sourcesContent":["\"use client\";\n\nfunction ProjectsLayout({ children }) {\n  return (\n    <main className=\"min-h-[100vh] w-screen overflow-x-hidden bg-black\">\n      {children}\n    </main>\n  );\n}\n\nexport default ProjectsLayout;\n"],"names":[],"mappings":";;;;;AAAA;;AAEA,SAAS,eAAe,KAAY;QAAZ,EAAE,QAAQ,EAAE,GAAZ;IACtB,qBACE,qMAAC;QAAK,WAAU;kBACb;;;;;;AAGP;KANS;uCAQM","debugId":null}}]
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/rongalivamsi/vamp/src/app/projects/layout.js"],"sourcesContent":["\"use client\";\n\n// import { ReactLenis } from \"lenis/react\";\n\nfunction ProjectsLayout({ children }) {\n  return (\n    // <ReactLenis root options={{ smoothWheel: true, lerp: 0.1 }}>\n    <main className=\"min-h-[100vh] w-screen overflow-x-hidden bg-black\">\n      {children}\n    </main>\n    // </ReactLenis>\n  );\n}\n\nexport default ProjectsLayout;\n"],"names":[],"mappings":";;;;;AAAA;;AAEA,4CAA4C;AAE5C,SAAS,eAAe,KAAY;QAAZ,EAAE,QAAQ,EAAE,GAAZ;IACtB,OACE,+DAA+D;kBAC/D,qMAAC;QAAK,WAAU;kBACb;;;;;;AAIP;KARS;uCAUM","debugId":null}}]
 }

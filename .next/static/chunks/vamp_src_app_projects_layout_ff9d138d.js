@@ -9,16 +9,18 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/vamp/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 "use client";
 ;
+// import { ReactLenis } from "lenis/react";
 function ProjectsLayout(param) {
     let { children } = param;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+    return(// <ReactLenis root options={{ smoothWheel: true, lerp: 0.1 }}>
+    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         className: "min-h-[100vh] w-screen overflow-x-hidden bg-black",
         children: children
     }, void 0, false, {
         fileName: "[project]/vamp/src/app/projects/layout.js",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 5
-    }, this);
+    }, this));
 }
 _c = ProjectsLayout;
 const __TURBOPACK__default__export__ = ProjectsLayout;
