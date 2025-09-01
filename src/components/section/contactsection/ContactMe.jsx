@@ -76,7 +76,7 @@ export default function ContactMe() {
           >
             {/* LinkedIn block */}
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/ramavamsi-16v"
               target="_blank"
               rel="noopener noreferrer"
               className="absolute"
@@ -100,7 +100,7 @@ export default function ContactMe() {
             </a>
             {/* Email block (180deg opposite) */}
             <a
-              href="mailto:your@email.com"
+              href="mailto:vamsirama1622@gmail.com"
               className="absolute"
               style={{
                 left: `calc(50% - ${ICON_SIZE / 2}px)`,

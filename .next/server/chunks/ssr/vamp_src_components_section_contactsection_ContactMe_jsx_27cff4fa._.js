@@ -98,7 +98,7 @@ function ContactMe() {
                             className: "jsx-9f7ba6a0bb398059" + " " + "absolute left-0 top-0 w-full h-full",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "https://www.linkedin.com/",
+                                    href: "https://www.linkedin.com/in/ramavamsi-16v",
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     style: {
@@ -148,7 +148,7 @@ function ContactMe() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "mailto:your@email.com",
+                                    href: "mailto:vamsirama1622@gmail.com",
                                     style: {
                                         left: `calc(50% - ${ICON_SIZE / 2}px)`,
                                         top: `calc(100% - ${ICON_SIZE / 2}px)`,
