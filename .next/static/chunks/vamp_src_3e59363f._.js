@@ -470,115 +470,103 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+// Modern, "new gen" animated name with glassmorphism, neon glow, and fluid gradient
 const NAME = "VENKATA RAMA VAMSI";
-// Deterministic pseudo-random function based on index
-function pseudoRandom(i) {
-    // Simple LCG: X_{n+1} = (a * X_n + c) % m
-    // Constants from Numerical Recipes
-    const a = 1664525;
-    const c = 1013904223;
-    const m = 2 ** 32;
-    let seed = i + 12345;
-    return (a * seed + c) % m / m;
-}
-// Example: cycle through a gradient of colors for each letter
-const NAME_COLORS = [
-    "#a78bfa",
-    "#6366f1",
-    "#818cf8",
-    "#60a5fa",
-    "#3b82f6",
-    "#2563eb",
-    "#6366f1",
-    "#818cf8",
-    "#60a5fa",
-    "#3b82f6",
-    "#a78bfa",
-    "#6366f1",
-    "#818cf8",
-    "#60a5fa",
-    "#3b82f6",
-    "#2563eb",
-    "#a78bfa",
-    "#6366f1",
-    "#818cf8",
-    "#60a5fa",
-    "#3b82f6"
+// Gradient color palette for the name
+const GRADIENTS = [
+    "linear-gradient(90deg, #a78bfa 0%, #60a5fa 100%)",
+    "linear-gradient(90deg, #6366f1 0%, #3b82f6 100%)",
+    "linear-gradient(90deg, #818cf8 0%, #2563eb 100%)",
+    "linear-gradient(90deg, #60a5fa 0%, #a78bfa 100%)",
+    "linear-gradient(90deg, #3b82f6 0%, #818cf8 100%)",
+    "linear-gradient(90deg, #2563eb 0%, #6366f1 100%)"
 ];
+// Modern font stack for a "next-gen" look
+const MODERN_FONT = '"Space Grotesk", "Inter", "Montserrat", "Poppins", "Segoe UI", "Arial", sans-serif';
 const AnimatedName = ()=>{
     _s();
-    // Precompute animation directions, delays, and colors deterministically
+    // Precompute animation delays and gradient backgrounds
     const letters = (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "AnimatedName.useMemo[letters]": ()=>{
-            const directions = [
-                {
-                    x: 0,
-                    y: -60
-                },
-                {
-                    x: 0,
-                    y: 60
-                },
-                {
-                    x: -60,
-                    y: 0
-                },
-                {
-                    x: 60,
-                    y: 0
-                }
-            ];
             return NAME.split("").map({
                 "AnimatedName.useMemo[letters]": (char, i)=>{
-                    const dir = directions[i % directions.length];
-                    // Use deterministic pseudo-random for delay
-                    const delay = 0.08 * i + pseudoRandom(i) * 0.05;
-                    // Pick color from NAME_COLORS array, cycling if needed
-                    const color = NAME_COLORS[i % NAME_COLORS.length];
+                    // Each letter gets a different gradient and animation delay
+                    const gradient = GRADIENTS[i % GRADIENTS.length];
+                    const delay = 0.07 * i;
                     return {
                         char,
-                        dir,
+                        gradient,
                         delay,
-                        key: i,
-                        color
+                        key: i
                     };
                 }
             }["AnimatedName.useMemo[letters]"]);
         }
     }["AnimatedName.useMemo[letters]"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-        className: "jsx-1e72ac9296505bf8" + " " + "relative inline-block",
+        className: "jsx-ba0f540b0d2c8f3d" + " " + "relative inline-flex items-center justify-center gap-1 select-none sm:gap-2",
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "jsx-ba0f540b0d2c8f3d" + " " + "z-0 absolute pointer-events-none -inset-4 sm:-inset-6",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "jsx-ba0f540b0d2c8f3d" + " " + "block w-full h-full bg-gradient-to-tr from-blue-500/30 via-violet-400/20 to-pink-400/30 rounded-3xl blur-2xl opacity-80 animate-blobfloat"
+                }, void 0, false, {
+                    fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
             letters.map((param)=>{
-                let { char, dir, delay, key, color } = param;
+                let { char, gradient, delay, key } = param;
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     style: {
+                        // Modern font, bold, wide, uppercase, neon shadow
+                        fontFamily: MODERN_FONT,
+                        fontWeight: 900,
+                        // Responsive font size: smaller on mobile, larger on bigger screens
+                        fontSize: "clamp(1.3rem, 7vw, 4.5rem)",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.08em",
+                        background: gradient,
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        backgroundClip: "text",
+                        filter: "drop-shadow(0 0 12px #a78bfa88) drop-shadow(0 2px 24px #60a5fa55)",
+                        // Animation
                         opacity: 0,
-                        transform: "translate(".concat(dir.x, "px, ").concat(dir.y, "px) scale(0.8)"),
-                        animation: "nameIn 0.7s cubic-bezier(.6,1.5,.5,1) forwards",
-                        animationDelay: "".concat(delay, "s"),
-                        color: color,
-                        textShadow: "0 2px 16px ".concat(color, "55"),
-                        fontWeight: 800,
-                        fontSize: "inherit",
-                        letterSpacing: "0.05em"
+                        transform: "translateY(40px) scale(0.85) rotate(-8deg)",
+                        animation: "letterIn 0.85s cubic-bezier(.6,1.5,.5,1) forwards, neonPulse 2.5s ".concat(delay + 0.7, "s infinite alternate"),
+                        animationDelay: "".concat(delay, "s, ").concat(delay + 0.7, "s")
                     },
-                    className: "jsx-1e72ac9296505bf8" + " " + "inline-block",
+                    className: "jsx-ba0f540b0d2c8f3d" + " " + "z-10 relative inline-block animated-letter",
                     children: char === " " ? "\u00A0" : char
                 }, key, false, {
                     fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                    lineNumber: 71,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0));
             }),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "1e72ac9296505bf8",
-                children: "@keyframes nameIn{0%{opacity:0;transform:var(--from-transform,translateY(40px)scale(.8));filter:blur(4px)}60%{opacity:1;filter:blur(.5px)}to{opacity:1;filter:none;transform:none}}"
-            }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0))
+                id: "ba0f540b0d2c8f3d",
+                children: "@keyframes letterIn{0%{opacity:0;filter:blur(8px)brightness(1.5);transform:translateY(40px)scale(.85)rotate(-8deg)}60%{opacity:1;filter:blur(1.5px)brightness(1.1);transform:translateY(-8px)scale(1.05)rotate(2deg)}to{opacity:1;filter:blur()brightness();transform:none}}@keyframes neonPulse{0%{filter:drop-shadow(0 0 12px rgba(167,139,250,.533))drop-shadow(0 2px 24px rgba(96,165,250,.333))}to{filter:drop-shadow(0 0 24px #60a5fa)drop-shadow(0 4px 32px rgba(167,139,250,.6))}}@keyframes blobfloat{0%,to{transform:translateY(0)scale(1)rotate(0)}50%{transform:translateY(-18px)scale(1.08)rotate(3deg)}}@media (max-width:640px){.animated-letter.jsx-ba0f540b0d2c8f3d{font-size:2rem!important}}@media (max-width:400px){.animated-letter.jsx-ba0f540b0d2c8f3d{font-size:1.3rem!important}}"
+            }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
+                href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;900&display=swap",
+                rel: "stylesheet",
+                className: "jsx-ba0f540b0d2c8f3d"
+            }, void 0, false, {
+                fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                lineNumber: 123,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
-        lineNumber: 69,
+        lineNumber: 38,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -589,25 +577,25 @@ const HomeAbout = ()=>{
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "flex flex-col items-center justify-center px-4 py-16 min-h-[100vh] w-full bg-black bg-opacity-80",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "mb-4 text-2xl font-extrabold text-white text-center sm:text-5xl",
+                className: "mb-4 font-extrabold text-white text-center text-2xl sm:text-4xl",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatedName, {}, void 0, false, {
                     fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                    lineNumber: 116,
+                    lineNumber: 136,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                lineNumber: 115,
+                lineNumber: 135,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
-            lineNumber: 114,
+            lineNumber: 134,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/vamp/src/components/section/homesection/homeabout/HomeAbout.jsx",
-        lineNumber: 113,
+        lineNumber: 133,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
