@@ -1,14 +1,32 @@
 "use client";
 
-import { ReactLenis } from "lenis/react";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 function ProjectsLayout({ children }) {
+  useEffect(() => {
+    if (typeof window === "undefined") return; // only run on client
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => t,
+      smooth: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
+
   return (
-    <ReactLenis root options={{ smoothWheel: true, lerp: 0.1 }}>
-      <main className="min-h-[100vh] w-screen overflow-x-hidden bg-black">
-        {children}
-      </main>
-    </ReactLenis>
+    <main className="min-h-[100vh] w-screen overflow-x-hidden bg-black">
+      {children}
+    </main>
   );
 }
 
