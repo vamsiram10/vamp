@@ -40,29 +40,6 @@ const AboutMe = () => {
               {/* Timeline items */}
               {[
                 {
-                  title: "Data Analyst Intern @ FedEx Logistics",
-                  description:
-                    "Worked with the Business Intelligence team to develop and optimize data-driven solutions, creating an interactive Labour Metrics Dashboard in Power BI to track productivity, utilization, and effectiveness.",
-                  date: "June 2025 - Present",
-                  location: "Hyderabad",
-                  icon: (
-                    <svg
-                      className="w-6 h-6 text-blue-500"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2M7 7a4 4 0 118 0 4 4 0 01-8 0z"
-                      />
-                    </svg>
-                  ),
-                  badge: "Internship",
-                },
-                {
                   title: "Amity University Rajasthan",
                   description:
                     "Pursuing a Bachelor's in Computer Science, maintaining a CGPA of 9.05.",

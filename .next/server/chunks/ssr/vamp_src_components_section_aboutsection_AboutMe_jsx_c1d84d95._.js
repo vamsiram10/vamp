@@ -67,33 +67,6 @@ const AboutMe = ()=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 [
                                     {
-                                        title: "Data Analyst Intern @ FedEx Logistics",
-                                        description: "Worked with the Business Intelligence team to develop and optimize data-driven solutions, creating an interactive Labour Metrics Dashboard in Power BI to track productivity, utilization, and effectiveness.",
-                                        date: "June 2025 - Present",
-                                        location: "Hyderabad",
-                                        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                            className: "w-6 h-6 text-blue-500",
-                                            fill: "none",
-                                            stroke: "currentColor",
-                                            strokeWidth: "2",
-                                            viewBox: "0 0 24 24",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                strokeLinecap: "round",
-                                                strokeLinejoin: "round",
-                                                d: "M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2M7 7a4 4 0 118 0 4 4 0 01-8 0z"
-                                            }, void 0, false, {
-                                                fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 56,
-                                                columnNumber: 23
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
-                                            fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 49,
-                                            columnNumber: 21
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        badge: "Internship"
-                                    },
-                                    {
                                         title: "Amity University Rajasthan",
                                         description: "Pursuing a Bachelor's in Computer Science, maintaining a CGPA of 9.05.",
                                         date: "2022 - 2026 (Expected)",
@@ -110,12 +83,12 @@ const AboutMe = ()=>{
                                                 d: "M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0H6m6 0h6"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 79,
+                                                lineNumber: 56,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 72,
+                                            lineNumber: 49,
                                             columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         badge: "Education"
@@ -137,12 +110,12 @@ const AboutMe = ()=>{
                                                 d: "M12 20l9-5-9-5-9 5 9 5z"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 102,
+                                                lineNumber: 79,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 95,
+                                            lineNumber: 72,
                                             columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         badge: "Science"
@@ -164,12 +137,12 @@ const AboutMe = ()=>{
                                                 d: "M5 13l4 4L19 7"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 125,
+                                                lineNumber: 102,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 118,
+                                            lineNumber: 95,
                                             columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         badge: "School"
@@ -188,7 +161,7 @@ const AboutMe = ()=>{
                                                                 children: item.badge
                                                             }, void 0, false, {
                                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                lineNumber: 144,
+                                                                lineNumber: 121,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -196,13 +169,13 @@ const AboutMe = ()=>{
                                                                 children: item.icon
                                                             }, void 0, false, {
                                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                lineNumber: 147,
+                                                                lineNumber: 124,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 143,
+                                                        lineNumber: 120,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -210,7 +183,7 @@ const AboutMe = ()=>{
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 126,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -218,13 +191,13 @@ const AboutMe = ()=>{
                                                         children: item.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 152,
+                                                        lineNumber: 129,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 142,
+                                                lineNumber: 119,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -235,17 +208,17 @@ const AboutMe = ()=>{
                                                         className: "absolute inset-0 w-full h-full bg-blue-500 rounded-full opacity-30 blur-lg"
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 159,
+                                                        lineNumber: 136,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 158,
+                                                    lineNumber: 135,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 157,
+                                                lineNumber: 134,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -256,7 +229,7 @@ const AboutMe = ()=>{
                                                         children: item.date
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 164,
+                                                        lineNumber: 141,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -275,7 +248,7 @@ const AboutMe = ()=>{
                                                                         d: "M17.657 16.657L13.414 12.414a4 4 0 10-1.414 1.414l4.243 4.243a1 1 0 001.414-1.414z"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                        lineNumber: 175,
+                                                                        lineNumber: 152,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -284,32 +257,32 @@ const AboutMe = ()=>{
                                                                         d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                        lineNumber: 180,
+                                                                        lineNumber: 157,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                lineNumber: 168,
+                                                                lineNumber: 145,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             item.location
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 167,
+                                                        lineNumber: 144,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 163,
+                                                lineNumber: 140,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, item.title, true, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 135,
+                                        lineNumber: 112,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)))
                             ]
@@ -344,14 +317,14 @@ const AboutMe = ()=>{
                                 children: "🚀"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 198,
+                                lineNumber: 175,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             " Technical Skills"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                        lineNumber: 197,
+                        lineNumber: 174,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -378,7 +351,7 @@ const AboutMe = ()=>{
                                                     className: "jsx-7c3c72638498207"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 205,
+                                                    lineNumber: 182,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -388,18 +361,18 @@ const AboutMe = ()=>{
                                                     className: "jsx-7c3c72638498207"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 212,
+                                                    lineNumber: 189,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 204,
+                                            lineNumber: 181,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 203,
+                                        lineNumber: 180,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -409,14 +382,14 @@ const AboutMe = ()=>{
                                                 className: "jsx-7c3c72638498207" + " " + "inline-block w-3 h-3 bg-blue-400 rounded-full shadow-lg animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 216,
+                                                lineNumber: 193,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Programming Languages"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 215,
+                                        lineNumber: 192,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -440,7 +413,7 @@ const AboutMe = ()=>{
                                                                     className: "jsx-7c3c72638498207"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 223,
+                                                                    lineNumber: 200,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -453,18 +426,18 @@ const AboutMe = ()=>{
                                                                     children: "J"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 224,
+                                                                    lineNumber: 201,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                            lineNumber: 222,
+                                                            lineNumber: 199,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 221,
+                                                        lineNumber: 198,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -472,13 +445,13 @@ const AboutMe = ()=>{
                                                         children: "Java"
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 235,
+                                                        lineNumber: 212,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 220,
+                                                lineNumber: 197,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -502,7 +475,7 @@ const AboutMe = ()=>{
                                                                     className: "jsx-7c3c72638498207"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 240,
+                                                                    lineNumber: 217,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -515,18 +488,18 @@ const AboutMe = ()=>{
                                                                     children: "Py"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 241,
+                                                                    lineNumber: 218,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                            lineNumber: 239,
+                                                            lineNumber: 216,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 215,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -534,13 +507,13 @@ const AboutMe = ()=>{
                                                         children: "Python"
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 252,
+                                                        lineNumber: 229,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 237,
+                                                lineNumber: 214,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -565,7 +538,7 @@ const AboutMe = ()=>{
                                                                     className: "jsx-7c3c72638498207"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 257,
+                                                                    lineNumber: 234,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -578,18 +551,18 @@ const AboutMe = ()=>{
                                                                     children: "C"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 265,
+                                                                    lineNumber: 242,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                            lineNumber: 256,
+                                                            lineNumber: 233,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 255,
+                                                        lineNumber: 232,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -597,25 +570,25 @@ const AboutMe = ()=>{
                                                         children: "C"
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 276,
+                                                        lineNumber: 253,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 254,
+                                                lineNumber: 231,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 219,
+                                        lineNumber: 196,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 202,
+                                lineNumber: 179,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -639,17 +612,17 @@ const AboutMe = ()=>{
                                                 className: "jsx-7c3c72638498207"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 284,
+                                                lineNumber: 261,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 283,
+                                            lineNumber: 260,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 282,
+                                        lineNumber: 259,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -659,14 +632,14 @@ const AboutMe = ()=>{
                                                 className: "jsx-7c3c72638498207" + " " + "inline-block w-3 h-3 bg-purple-400 rounded-full shadow-lg animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 295,
+                                                lineNumber: 272,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Databases"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 294,
+                                        lineNumber: 271,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -693,7 +666,7 @@ const AboutMe = ()=>{
                                                                     className: "jsx-7c3c72638498207"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 302,
+                                                                    lineNumber: 279,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -706,18 +679,18 @@ const AboutMe = ()=>{
                                                                     children: "MySQL"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 303,
+                                                                    lineNumber: 280,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                            lineNumber: 301,
+                                                            lineNumber: 278,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 300,
+                                                        lineNumber: 277,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -725,13 +698,13 @@ const AboutMe = ()=>{
                                                         children: "MySQL"
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 314,
+                                                        lineNumber: 291,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 299,
+                                                lineNumber: 276,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -755,7 +728,7 @@ const AboutMe = ()=>{
                                                                     className: "jsx-7c3c72638498207"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 319,
+                                                                    lineNumber: 296,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -768,18 +741,18 @@ const AboutMe = ()=>{
                                                                     children: "SQL"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                                    lineNumber: 320,
+                                                                    lineNumber: 297,
                                                                     columnNumber: 21
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                            lineNumber: 318,
+                                                            lineNumber: 295,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 317,
+                                                        lineNumber: 294,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -787,25 +760,25 @@ const AboutMe = ()=>{
                                                         children: "SQL"
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 331,
+                                                        lineNumber: 308,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 316,
+                                                lineNumber: 293,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 298,
+                                        lineNumber: 275,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 281,
+                                lineNumber: 258,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -830,17 +803,17 @@ const AboutMe = ()=>{
                                                 className: "jsx-7c3c72638498207"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 339,
+                                                lineNumber: 316,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 338,
+                                            lineNumber: 315,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 337,
+                                        lineNumber: 314,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -850,14 +823,14 @@ const AboutMe = ()=>{
                                                 className: "jsx-7c3c72638498207" + " " + "inline-block w-3 h-3 bg-pink-400 rounded-full shadow-lg animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 351,
+                                                lineNumber: 328,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Libraries & Frameworks"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 350,
+                                        lineNumber: 327,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -893,12 +866,12 @@ const AboutMe = ()=>{
                                                             children: lib.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                            lineNumber: 384,
+                                                            lineNumber: 361,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 381,
+                                                        lineNumber: 358,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -906,24 +879,24 @@ const AboutMe = ()=>{
                                                         children: lib.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 386,
+                                                        lineNumber: 363,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, lib.name, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 377,
+                                                lineNumber: 354,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 354,
+                                        lineNumber: 331,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 336,
+                                lineNumber: 313,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -944,17 +917,17 @@ const AboutMe = ()=>{
                                                 className: "jsx-7c3c72638498207"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 397,
+                                                lineNumber: 374,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 396,
+                                            lineNumber: 373,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 395,
+                                        lineNumber: 372,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -964,14 +937,14 @@ const AboutMe = ()=>{
                                                 className: "jsx-7c3c72638498207" + " " + "inline-block w-3 h-3 bg-gray-400 rounded-full shadow-lg animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 405,
+                                                lineNumber: 382,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             "Tools & Platforms"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 404,
+                                        lineNumber: 381,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1012,12 +985,12 @@ const AboutMe = ()=>{
                                                             children: tool.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                            lineNumber: 443,
+                                                            lineNumber: 420,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 440,
+                                                        lineNumber: 417,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1025,30 +998,30 @@ const AboutMe = ()=>{
                                                         children: tool.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                        lineNumber: 445,
+                                                        lineNumber: 422,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, tool.name, true, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 436,
+                                                lineNumber: 413,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 408,
+                                        lineNumber: 385,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 394,
+                                lineNumber: 371,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                        lineNumber: 200,
+                        lineNumber: 177,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1058,20 +1031,20 @@ const AboutMe = ()=>{
                                 className: "jsx-7c3c72638498207" + " " + "absolute left-1/4 top-0 w-72 h-72 bg-gradient-to-br from-blue-500/30 via-purple-400/20 to-pink-400/30 rounded-full blur-3xl animate-blob1"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 455,
+                                lineNumber: 432,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "jsx-7c3c72638498207" + " " + "absolute right-1/4 bottom-0 w-72 h-72 bg-gradient-to-br from-pink-400/30 via-yellow-300/20 to-blue-400/30 rounded-full blur-3xl animate-blob2"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 456,
+                                lineNumber: 433,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                        lineNumber: 454,
+                        lineNumber: 431,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1081,7 +1054,7 @@ const AboutMe = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                lineNumber: 196,
+                lineNumber: 173,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1095,14 +1068,14 @@ const AboutMe = ()=>{
                                 children: "🌐"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 500,
+                                lineNumber: 477,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             " Online Presence"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                        lineNumber: 499,
+                        lineNumber: 476,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1126,17 +1099,17 @@ const AboutMe = ()=>{
                                                 fill: "#fff"
                                             }, void 0, false, {
                                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                lineNumber: 512,
+                                                lineNumber: 489,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 511,
+                                            lineNumber: 488,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 510,
+                                        lineNumber: 487,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1144,13 +1117,13 @@ const AboutMe = ()=>{
                                         children: "GitHub"
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 518,
+                                        lineNumber: 495,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 504,
+                                lineNumber: 481,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1174,7 +1147,7 @@ const AboutMe = ()=>{
                                                     fill: "#2563eb"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 531,
+                                                    lineNumber: 508,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1182,18 +1155,18 @@ const AboutMe = ()=>{
                                                     fill: "#fff"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 532,
+                                                    lineNumber: 509,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 530,
+                                            lineNumber: 507,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 529,
+                                        lineNumber: 506,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1201,13 +1174,13 @@ const AboutMe = ()=>{
                                         children: "LinkedIn"
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 538,
+                                        lineNumber: 515,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 523,
+                                lineNumber: 500,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1229,7 +1202,7 @@ const AboutMe = ()=>{
                                                     fill: "#fff"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 551,
+                                                    lineNumber: 528,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1240,18 +1213,18 @@ const AboutMe = ()=>{
                                                     strokeLinejoin: "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 555,
+                                                    lineNumber: 532,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 550,
+                                            lineNumber: 527,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 549,
+                                        lineNumber: 526,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1259,13 +1232,13 @@ const AboutMe = ()=>{
                                         children: "LeetCode"
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 564,
+                                        lineNumber: 541,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 543,
+                                lineNumber: 520,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1291,7 +1264,7 @@ const AboutMe = ()=>{
                                                     fill: "#10b981"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 577,
+                                                    lineNumber: 554,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1301,18 +1274,18 @@ const AboutMe = ()=>{
                                                     strokeLinecap: "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 585,
+                                                    lineNumber: 562,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 576,
+                                            lineNumber: 553,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 575,
+                                        lineNumber: 552,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1320,13 +1293,13 @@ const AboutMe = ()=>{
                                         children: "HackerRank"
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 593,
+                                        lineNumber: 570,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 569,
+                                lineNumber: 546,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1351,7 +1324,7 @@ const AboutMe = ()=>{
                                                     fill: "#fff"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 606,
+                                                    lineNumber: 583,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1361,7 +1334,7 @@ const AboutMe = ()=>{
                                                     fill: "none"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 607,
+                                                    lineNumber: 584,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -1372,7 +1345,7 @@ const AboutMe = ()=>{
                                                     fill: "#a16207"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 613,
+                                                    lineNumber: 590,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -1383,7 +1356,7 @@ const AboutMe = ()=>{
                                                     fill: "#a16207"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 614,
+                                                    lineNumber: 591,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -1395,18 +1368,18 @@ const AboutMe = ()=>{
                                                     fill: "#a16207"
                                                 }, void 0, false, {
                                                     fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                                    lineNumber: 615,
+                                                    lineNumber: 592,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                            lineNumber: 605,
+                                            lineNumber: 582,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 604,
+                                        lineNumber: 581,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1414,25 +1387,25 @@ const AboutMe = ()=>{
                                         children: "CodeChef"
                                     }, void 0, false, {
                                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                        lineNumber: 625,
+                                        lineNumber: 602,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                                lineNumber: 598,
+                                lineNumber: 575,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                        lineNumber: 502,
+                        lineNumber: 479,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/vamp/src/components/section/aboutsection/AboutMe.jsx",
-                lineNumber: 498,
+                lineNumber: 475,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
