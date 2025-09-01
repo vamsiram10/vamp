@@ -186,14 +186,12 @@
     --color-gray-900: #101828;
     --color-neutral-100: #f5f5f5;
     --color-neutral-200: #e5e5e5;
-    --color-neutral-500: #737373;
     --color-neutral-800: #262626;
     --color-neutral-950: #0a0a0a;
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
     --container-lg: 32rem;
-    --container-xl: 36rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;
@@ -215,8 +213,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-medium: 500;
@@ -290,7 +286,6 @@
       --color-gray-900: color(display-p3 .070423 .0928982 .151928);
       --color-neutral-100: color(display-p3 .960587 .960587 .960587);
       --color-neutral-200: color(display-p3 .898161 .898161 .898161);
-      --color-neutral-500: color(display-p3 .451519 .451519 .451519);
       --color-neutral-800: color(display-p3 .149382 .149382 .149382);
       --color-neutral-950: color(display-p3 .0393882 .0393882 .0393882);
     }
@@ -345,7 +340,6 @@
       --color-gray-900: lab(8.11897% .811279 -12.254);
       --color-neutral-100: lab(96.52% -.0000298023 .0000119209);
       --color-neutral-200: lab(90.952% 0 -.0000119209);
-      --color-neutral-500: lab(48.496% 0 0);
       --color-neutral-800: lab(15.204% 0 -.00000596046);
       --color-neutral-950: lab(2.75381% 0 0);
     }
@@ -748,16 +742,8 @@
     top: calc(var(--spacing) * 4);
   }
 
-  .top-9 {
-    top: calc(var(--spacing) * 9);
-  }
-
   .top-10 {
     top: calc(var(--spacing) * 10);
-  }
-
-  .top-15 {
-    top: calc(var(--spacing) * 15);
   }
 
   .top-20 {
@@ -766,10 +752,6 @@
 
   .top-25 {
     top: calc(var(--spacing) * 25);
-  }
-
-  .top-40 {
-    top: calc(var(--spacing) * 40);
   }
 
   .top-50 {
@@ -939,10 +921,6 @@
     margin-bottom: calc(var(--spacing) * 10);
   }
 
-  .mb-12 {
-    margin-bottom: calc(var(--spacing) * 12);
-  }
-
   .block {
     display: block;
   }
@@ -1043,10 +1021,6 @@
     height: calc(var(--spacing) * 180);
   }
 
-  .h-200 {
-    height: calc(var(--spacing) * 200);
-  }
-
   .h-\[28rem\] {
     height: 28rem;
   }
@@ -1061,10 +1035,6 @@
 
   .h-screen {
     height: 100vh;
-  }
-
-  .min-h-\[90vh\] {
-    min-height: 90vh;
   }
 
   .min-h-\[100vh\], .min-h-screen {
@@ -1111,12 +1081,36 @@
     width: calc(var(--spacing) * 60);
   }
 
+  .w-70 {
+    width: calc(var(--spacing) * 70);
+  }
+
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
 
   .w-80 {
     width: calc(var(--spacing) * 80);
+  }
+
+  .w-90 {
+    width: calc(var(--spacing) * 90);
+  }
+
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+
+  .w-120 {
+    width: calc(var(--spacing) * 120);
+  }
+
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+
+  .w-200 {
+    width: calc(var(--spacing) * 200);
   }
 
   .w-\[calc\(100\%-4rem\)\] {
@@ -1157,10 +1151,6 @@
 
   .max-w-lg {
     max-width: var(--container-lg);
-  }
-
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
 
   .grow {
@@ -1415,10 +1405,6 @@
 
   .bg-blue-500 {
     background-color: var(--color-blue-500);
-  }
-
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
   }
 
   .bg-blue-900\/60 {
@@ -2204,10 +2190,6 @@
     color: var(--color-green-500);
   }
 
-  .text-neutral-500 {
-    color: var(--color-neutral-500);
-  }
-
   .text-orange-400 {
     color: var(--color-orange-400);
   }
@@ -2252,6 +2234,11 @@
     color: var(--color-yellow-400);
   }
 
+  .underline {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+  }
+
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2277,18 +2264,8 @@
     opacity: 1;
   }
 
-  .shadow {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgba(0, 0, 0, .1)), 0 1px 2px -1px var(--tw-shadow-color, rgba(0, 0, 0, .1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgba(0, 0, 0, .25));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-
-  .shadow-\[0px_2px_0px_0px_\#FFFFFF40_inset\] {
-    --tw-shadow: 0px 2px 0px 0px var(--tw-shadow-color, rgba(255, 255, 255, .25)) inset;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
@@ -2454,12 +2431,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-blue-700:hover {
-      background-color: var(--color-blue-700);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:text-black:hover {
       color: var(--color-black);
     }
@@ -2468,6 +2439,12 @@
   @media (hover: hover) {
     .hover\:text-blue-300:hover {
       color: var(--color-blue-300);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-blue-600:hover {
+      color: var(--color-blue-600);
     }
   }
 
@@ -2550,12 +2527,6 @@
   }
 
   @media (min-width: 40rem) {
-    .sm\:flex-row {
-      flex-direction: row;
-    }
-  }
-
-  @media (min-width: 40rem) {
     .sm\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -2581,19 +2552,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:px-10 {
-      padding-inline: calc(var(--spacing) * 10);
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:text-2xl {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -2604,13 +2562,6 @@
     .md\:text-4xl {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:text-6xl {
-      font-size: var(--text-6xl);
-      line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
 

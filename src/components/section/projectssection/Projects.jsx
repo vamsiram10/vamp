@@ -14,63 +14,104 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 // Each project now includes a pentagon graph data for skills used in that project
 const cardProjects = [
   {
-    title: "Hackathon 2024",
+    title: "ShopEase E-commerce",
     description:
-      "Build innovative solutions and compete for prizes in our annual coding marathon!",
+      "A mini e-commerce app using Java Servlets, JDBC, and MySQL with real-time cart updates.",
     details:
-      "This event brings together coders, designers, and entrepreneurs to build innovative solutions. Participants form teams, brainstorm ideas, and develop prototypes within a limited time. Prizes are awarded for creativity, technical excellence, and impact.",
-    image: "/img/hackathon.jpg",
+      "ShopEase is a streamlined e-commerce application built to showcase essential backend concepts. It features user login, manages shopping carts across sessions, and connects directly to a MySQL database using JDBC for handling products and orders. Through this project, I gained hands-on experience with server-side Java programming and database architecture.",
+    image: "/shopease.jpeg",
     skills: [
+      { name: "Java Servlets", value: "Java Servlets: 90" },
+      { name: "JDBC", value: "JDBC: 85" },
+      { name: "MySQL", value: "MySQL: 15" },
+      { name: "JavaScript", value: "JavaScript: 70" },
+      { name: "CSS", value: "HTML/CSS: 85" },
+    ],
+  },
+  {
+    title: "Avasa Foundation Website (NGO)",
+    description:
+      "Developed a modern, responsive website for Avasa Foundation using Next.js, React, and Tailwind CSS.",
+    details: (
+      <>
+        For the Avasa Foundation NGO website, I built a modern, responsive web
+        application using React and the Next.js framework. The project leverages
+        both JavaScript and TypeScript for robust, type-safe code. I utilized
+        Tailwind CSS for rapid and consistent styling, ensuring a clean and
+        accessible UI. Animations and interactive effects were implemented with
+        GSAP to enhance user engagement. The site structure is built with
+        semantic HTML, and the overall stack demonstrates my ability to
+        integrate advanced frontend technologies for a real-world, impactful
+        project. Visit:{" "}
+        <a
+          href="https://avasafoundation.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 underline hover:text-blue-600"
+        >
+          avasafoundation.org
+        </a>
+      </>
+    ),
+    image: "/AVASA.jpg",
+    live: "https://avasafoundation.org/",
+    skills: [
+      { name: "Next.js", value: "Next.js: 90" },
       { name: "React", value: "React: 90" },
-      { name: "Node.js", value: "Node.js: 80" },
-      { name: "UI/UX", value: "UI/UX: 70" },
-      { name: "Teamwork", value: "Teamwork: 85" },
-      { name: "APIs", value: "APIs: 75" },
+      { name: "TypeScript", value: "TypeScript: 10" },
+      { name: "Tailwind CSS", value: "Tailwind CSS: 85" },
+      { name: "GSAP", value: "GSAP: 75" },
     ],
   },
   {
-    title: "Design Sprint",
+    title: "Terminal Automation",
     description:
-      "Collaborate with creative minds to solve real-world problems in just 48 hours.",
+      "A Python menu-driven tool for  automation: send emails, WhatsApp messages, scrape web data etc.",
     details:
-      "A fast-paced event where teams rapidly prototype and test solutions to real-world challenges. Mentors guide participants through ideation, prototyping, and user testing. The best solutions are showcased to a panel of judges.",
-    image: "/img/designsprint.jpg",
+      "Terminal Automation is a Python-based tool that streamlines common tasks through a simple command-line interface. It automates actions like sending emails, scheduling WhatsApp messages, scraping web data, and converting text to speech—all from the terminal. The project uses Python libraries and APIs to make repetitive workflows more efficient.\n\nChallenges & Solutions:\nAutomating WhatsApp Web was tricky due to frequent UI changes. I used Selenium WebDriver with XPATH selectors and explicit waits to make the automation more reliable.",
+    image: "/soon.png",
     skills: [
-      { name: "Figma", value: "Figma: 85" },
-      { name: "Ideation", value: "Ideation: 90" },
-      { name: "Prototyping", value: "Prototyping: 80" },
-      { name: "Collaboration", value: "Collaboration: 95" },
-      { name: "Presentation", value: "Presentation: 75" },
+      { name: "Python", value: "Python: 95" },
+      { name: "API Integration", value: "API Integration: 81" },
+      { name: "CLI Tools", value: "CLI Tools: 70" },
+      { name: "Web Scraping", value: "Web Scraping: 70" },
+      { name: "Automation", value: "Automation: 95" },
     ],
   },
   {
-    title: "Tech Expo",
+    title: "Hackathon : cognizant",
     description:
-      "Showcase your latest projects and network with industry professionals.",
-    details:
-      "An exhibition for students and professionals to present their latest tech projects. Attendees can interact with demos, attend talks, and network with industry leaders. Awards are given for the most innovative and impactful projects.",
-    image: "/img/techexpo.jpg",
+      "Participated in a 3-hour hackathon where strong core concepts were essential to quickly build a working solution.",
+    details: (
+      <>
+        I participated in the{" "}
+        <span className="font-semibold text-blue-400">Snap Syntax</span>{" "}
+        hackathon, where I built a website as per the requirements using only
+        HTML and CSS. This experience challenged me to quickly design and
+        implement a functional and visually appealing site within a limited
+        timeframe, relying solely on core web technologies.
+        <br />
+        <span>
+          visit:&nbsp;
+          <a
+            href="https://snap-cogni2047756.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 underline hover:text-blue-600"
+          >
+            CodeSprint Hackathon
+          </a>
+        </span>
+      </>
+    ),
+    image: "/4.jpg",
+
     skills: [
-      { name: "Networking", value: "Networking: 90" },
-      { name: "Demo", value: "Demo: 80" },
-      { name: "Documentation", value: "Documentation: 70" },
-      { name: "Marketing", value: "Marketing: 60" },
-      { name: "Innovation", value: "Innovation: 85" },
-    ],
-  },
-  {
-    title: "Workshop Series",
-    description:
-      "Learn new skills from experts in web development, AI, and more.",
-    details:
-      "A series of hands-on workshops led by industry experts. Topics include web development, artificial intelligence, and problem-solving. Participants gain practical experience and receive certificates upon completion.",
-    image: "/img/workshop.jpg",
-    skills: [
-      { name: "Web Dev", value: "Web Dev: 80" },
-      { name: "AI/ML", value: "AI/ML: 75" },
-      { name: "Learning", value: "Learning: 95" },
-      { name: "Community", value: "Community: 85" },
-      { name: "Problem Solving", value: "Problem Solving: 90" },
+      { name: "HTML", value: "HTML: 80" },
+      { name: "CSS", value: "CSS: 75" },
+      { name: "CSS", value: "JavaScript: 85" },
+      { name: "HTML & CSS", value: "HTML & CSS: 90" },
+      { name: "HTML", value: "Teamwork: 90" },
     ],
   },
 ];
@@ -207,7 +248,7 @@ const Projects = forwardRef((props, ref) => {
               <img
                 src={modalProject.image}
                 alt={modalProject.title}
-                className="object-cover mb-4 w-full h-48 rounded"
+                className="object-cover mb-4 w-90 h-48 rounded"
                 style={{ maxHeight: "200px", objectFit: "cover" }}
               />
             )}

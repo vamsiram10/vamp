@@ -172,15 +172,16 @@ const HomeEventCard = forwardRef(
                         const percentX = 90 + percentR * Math.cos(angle);
                         const percentY = 90 + percentR * Math.sin(angle);
 
+                        // Use a unique key by combining skill name and index
                         return (
-                          <g key={skill.name}>
+                          <g key={`${skill.name}-${i}`}>
                             {/* Vertex dot */}
                             <circle
                               cx={x}
                               cy={y}
-                              r="4"
-                              fill="#fff"
-                              stroke="#09f"
+                              r="5"
+                              fill="#09f"
+                              stroke="#fff"
                               strokeWidth="2"
                             />
                             {/* Skill name */}

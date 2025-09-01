@@ -232,18 +232,19 @@ const HomeEventCard = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                                     const percentR = 55;
                                                     const percentX = 90 + percentR * Math.cos(angle);
                                                     const percentY = 90 + percentR * Math.sin(angle);
+                                                    // Use a unique key by combining skill name and index
                                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
                                                                 cx: x,
                                                                 cy: y,
-                                                                r: "4",
-                                                                fill: "#fff",
-                                                                stroke: "#09f",
+                                                                r: "5",
+                                                                fill: "#09f",
+                                                                stroke: "#fff",
                                                                 strokeWidth: "2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/vamp/src/snippets/homeeventcard/HomeEventCard.jsx",
-                                                                lineNumber: 178,
+                                                                lineNumber: 179,
                                                                 columnNumber: 29
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -261,7 +262,7 @@ const HomeEventCard = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                                                 children: skill.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/vamp/src/snippets/homeeventcard/HomeEventCard.jsx",
-                                                                lineNumber: 187,
+                                                                lineNumber: 188,
                                                                 columnNumber: 29
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -282,13 +283,13 @@ const HomeEventCard = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/vamp/src/snippets/homeeventcard/HomeEventCard.jsx",
-                                                                lineNumber: 203,
+                                                                lineNumber: 204,
                                                                 columnNumber: 29
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
-                                                    }, skill.name, true, {
+                                                    }, "".concat(skill.name, "-").concat(i), true, {
                                                         fileName: "[project]/vamp/src/snippets/homeeventcard/HomeEventCard.jsx",
-                                                        lineNumber: 176,
+                                                        lineNumber: 177,
                                                         columnNumber: 27
                                                     }, ("TURBOPACK compile-time value", void 0));
                                                 })
@@ -308,7 +309,7 @@ const HomeEventCard = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                     className: "flipCardBackOverlay"
                                 }, void 0, false, {
                                     fileName: "[project]/vamp/src/snippets/homeeventcard/HomeEventCard.jsx",
-                                    lineNumber: 224,
+                                    lineNumber: 225,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
@@ -464,114 +465,171 @@ __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$gsap$2f$
 // Each project now includes a pentagon graph data for skills used in that project
 const cardProjects = [
     {
-        title: "Hackathon 2024",
-        description: "Build innovative solutions and compete for prizes in our annual coding marathon!",
-        details: "This event brings together coders, designers, and entrepreneurs to build innovative solutions. Participants form teams, brainstorm ideas, and develop prototypes within a limited time. Prizes are awarded for creativity, technical excellence, and impact.",
-        image: "/img/hackathon.jpg",
+        title: "ShopEase E-commerce",
+        description: "A mini e-commerce app using Java Servlets, JDBC, and MySQL with real-time cart updates.",
+        details: "ShopEase is a streamlined e-commerce application built to showcase essential backend concepts. It features user login, manages shopping carts across sessions, and connects directly to a MySQL database using JDBC for handling products and orders. Through this project, I gained hands-on experience with server-side Java programming and database architecture.",
+        image: "/shopease.jpeg",
         skills: [
+            {
+                name: "Java Servlets",
+                value: "Java Servlets: 90"
+            },
+            {
+                name: "JDBC",
+                value: "JDBC: 85"
+            },
+            {
+                name: "MySQL",
+                value: "MySQL: 15"
+            },
+            {
+                name: "JavaScript",
+                value: "JavaScript: 70"
+            },
+            {
+                name: "CSS",
+                value: "HTML/CSS: 85"
+            }
+        ]
+    },
+    {
+        title: "Avasa Foundation Website (NGO)",
+        description: "Developed a modern, responsive website for Avasa Foundation using Next.js, React, and Tailwind CSS.",
+        details: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                "For the Avasa Foundation NGO website, I built a modern, responsive web application using React and the Next.js framework. The project leverages both JavaScript and TypeScript for robust, type-safe code. I utilized Tailwind CSS for rapid and consistent styling, ensuring a clean and accessible UI. Animations and interactive effects were implemented with GSAP to enhance user engagement. The site structure is built with semantic HTML, and the overall stack demonstrates my ability to integrate advanced frontend technologies for a real-world, impactful project. Visit:",
+                " ",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                    href: "https://avasafoundation.org",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "text-blue-400 underline hover:text-blue-600",
+                    children: "avasafoundation.org"
+                }, void 0, false, {
+                    fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
+                    lineNumber: 46,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true),
+        image: "/AVASA.jpg",
+        live: "https://avasafoundation.org/",
+        skills: [
+            {
+                name: "Next.js",
+                value: "Next.js: 90"
+            },
             {
                 name: "React",
                 value: "React: 90"
             },
             {
-                name: "Node.js",
-                value: "Node.js: 80"
+                name: "TypeScript",
+                value: "TypeScript: 10"
             },
             {
-                name: "UI/UX",
-                value: "UI/UX: 70"
+                name: "Tailwind CSS",
+                value: "Tailwind CSS: 85"
             },
             {
-                name: "Teamwork",
-                value: "Teamwork: 85"
-            },
-            {
-                name: "APIs",
-                value: "APIs: 75"
+                name: "GSAP",
+                value: "GSAP: 75"
             }
         ]
     },
     {
-        title: "Design Sprint",
-        description: "Collaborate with creative minds to solve real-world problems in just 48 hours.",
-        details: "A fast-paced event where teams rapidly prototype and test solutions to real-world challenges. Mentors guide participants through ideation, prototyping, and user testing. The best solutions are showcased to a panel of judges.",
-        image: "/img/designsprint.jpg",
+        title: "Terminal Automation",
+        description: "A Python menu-driven tool for  automation: send emails, WhatsApp messages, scrape web data etc.",
+        details: "Terminal Automation is a Python-based tool that streamlines common tasks through a simple command-line interface. It automates actions like sending emails, scheduling WhatsApp messages, scraping web data, and converting text to speech—all from the terminal. The project uses Python libraries and APIs to make repetitive workflows more efficient.\n\nChallenges & Solutions:\nAutomating WhatsApp Web was tricky due to frequent UI changes. I used Selenium WebDriver with XPATH selectors and explicit waits to make the automation more reliable.",
+        image: "/soon.png",
         skills: [
             {
-                name: "Figma",
-                value: "Figma: 85"
+                name: "Python",
+                value: "Python: 95"
             },
             {
-                name: "Ideation",
-                value: "Ideation: 90"
+                name: "API Integration",
+                value: "API Integration: 81"
             },
             {
-                name: "Prototyping",
-                value: "Prototyping: 80"
+                name: "CLI Tools",
+                value: "CLI Tools: 70"
             },
             {
-                name: "Collaboration",
-                value: "Collaboration: 95"
+                name: "Web Scraping",
+                value: "Web Scraping: 70"
             },
             {
-                name: "Presentation",
-                value: "Presentation: 75"
+                name: "Automation",
+                value: "Automation: 95"
             }
         ]
     },
     {
-        title: "Tech Expo",
-        description: "Showcase your latest projects and network with industry professionals.",
-        details: "An exhibition for students and professionals to present their latest tech projects. Attendees can interact with demos, attend talks, and network with industry leaders. Awards are given for the most innovative and impactful projects.",
-        image: "/img/techexpo.jpg",
+        title: "Hackathon : cognizant",
+        description: "Participated in a 3-hour hackathon where strong core concepts were essential to quickly build a working solution.",
+        details: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                "I participated in the",
+                " ",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "font-semibold text-blue-400",
+                    children: "Snap Syntax"
+                }, void 0, false, {
+                    fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
+                    lineNumber: 88,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                " ",
+                "hackathon, where I built a website as per the requirements using only HTML and CSS. This experience challenged me to quickly design and implement a functional and visually appealing site within a limited timeframe, relying solely on core web technologies.",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                    fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
+                    lineNumber: 93,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: [
+                        "visit: ",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "https://snap-cogni2047756.vercel.app",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "text-blue-400 underline hover:text-blue-600",
+                            children: "CodeSprint Hackathon"
+                        }, void 0, false, {
+                            fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
+                            lineNumber: 96,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
+                    lineNumber: 94,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true),
+        image: "/4.jpg",
         skills: [
             {
-                name: "Networking",
-                value: "Networking: 90"
+                name: "HTML",
+                value: "HTML: 80"
             },
             {
-                name: "Demo",
-                value: "Demo: 80"
+                name: "CSS",
+                value: "CSS: 75"
             },
             {
-                name: "Documentation",
-                value: "Documentation: 70"
+                name: "CSS",
+                value: "JavaScript: 85"
             },
             {
-                name: "Marketing",
-                value: "Marketing: 60"
+                name: "HTML & CSS",
+                value: "HTML & CSS: 90"
             },
             {
-                name: "Innovation",
-                value: "Innovation: 85"
-            }
-        ]
-    },
-    {
-        title: "Workshop Series",
-        description: "Learn new skills from experts in web development, AI, and more.",
-        details: "A series of hands-on workshops led by industry experts. Topics include web development, artificial intelligence, and problem-solving. Participants gain practical experience and receive certificates upon completion.",
-        image: "/img/workshop.jpg",
-        skills: [
-            {
-                name: "Web Dev",
-                value: "Web Dev: 80"
-            },
-            {
-                name: "AI/ML",
-                value: "AI/ML: 75"
-            },
-            {
-                name: "Learning",
-                value: "Learning: 95"
-            },
-            {
-                name: "Community",
-                value: "Community: 85"
-            },
-            {
-                name: "Problem Solving",
-                value: "Problem Solving: 90"
+                name: "HTML",
+                value: "Teamwork: 90"
             }
         ]
     }
@@ -633,7 +691,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 children: "L"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 132,
+                                lineNumber: 173,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -641,7 +699,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 children: "e"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 133,
+                                lineNumber: 174,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -649,7 +707,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 children: "t"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 134,
+                                lineNumber: 175,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -657,7 +715,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 children: "'"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 135,
+                                lineNumber: 176,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -665,7 +723,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 children: "s"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 136,
+                                lineNumber: 177,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -673,7 +731,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 children: " g"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 137,
+                                lineNumber: 178,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -681,23 +739,23 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 children: "o"
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 138,
+                                lineNumber: 179,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                        lineNumber: 131,
+                        lineNumber: 172,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                    lineNumber: 130,
+                    lineNumber: 171,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                lineNumber: 125,
+                lineNumber: 166,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -709,7 +767,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                         containerClass: "mt-5 !text-black text-center"
                     }, void 0, false, {
                         fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                        lineNumber: 146,
+                        lineNumber: 187,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     cardProjects.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -735,18 +793,18 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                                lineNumber: 159,
+                                lineNumber: 200,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, index, false, {
                             fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                            lineNumber: 151,
+                            lineNumber: 192,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)))
                 ]
             }, void 0, true, {
                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                lineNumber: 145,
+                lineNumber: 186,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             modalOpen && modalProject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -779,7 +837,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                             children: "×"
                         }, void 0, false, {
                             fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                            lineNumber: 192,
+                            lineNumber: 233,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         modalProject.image && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -789,10 +847,10 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                 maxHeight: "200px",
                                 objectFit: "cover"
                             },
-                            className: "jsx-1c157147beeac4a5" + " " + "object-cover mb-4 w-full h-48 rounded"
+                            className: "jsx-1c157147beeac4a5" + " " + "object-cover mb-4 w-90 h-48 rounded"
                         }, void 0, false, {
                             fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                            lineNumber: 207,
+                            lineNumber: 248,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -800,7 +858,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                             children: modalProject.title
                         }, void 0, false, {
                             fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                            lineNumber: 214,
+                            lineNumber: 255,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -808,18 +866,18 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                             children: modalProject.details || modalProject.description
                         }, void 0, false, {
                             fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                            lineNumber: 215,
+                            lineNumber: 256,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                    lineNumber: 182,
+                    lineNumber: 223,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-                lineNumber: 177,
+                lineNumber: 218,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -829,7 +887,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
         ]
     }, void 0, true, {
         fileName: "[project]/vamp/src/components/section/projectssection/Projects.jsx",
-        lineNumber: 123,
+        lineNumber: 164,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 }, "K4r1jNzxpNk4kZUzYo/f0HsBIwk=")), "K4r1jNzxpNk4kZUzYo/f0HsBIwk=");
