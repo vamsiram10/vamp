@@ -7,9 +7,14 @@ import { LiaProjectDiagramSolid } from "react-icons/lia";
 export function Navbar() {
   // Sound effect: a short click sound (public domain)
   // You can replace the URL with your own sound file if desired
-  const clickAudioRef = useRef(
-    typeof window !== "undefined" ? new Audio("/gtasanhoverone.wav") : null
-  );
+
+  // Avoid SSR hydration mismatch by initializing ref in useEffect
+  const clickAudioRef = useRef(null);
+
+  useEffect(() => {
+    // Only run on client
+    clickAudioRef.current = new Audio("/gtasanhoverone.wav");
+  }, []);
 
   const playClickSound = () => {
     if (clickAudioRef.current) {
@@ -57,31 +62,30 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Use neutral color for icons to match SSR and client
+  const iconClass = "h-4 w-4 text-violet-500 dark:text-violet-400";
+
   const navItems = [
     {
       name: "Home",
       link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconHome className={iconClass} />,
     },
     {
       name: "Projects",
       link: "/projects",
-      icon: (
-        <LiaProjectDiagramSolid className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
+      icon: <LiaProjectDiagramSolid className={iconClass} />,
       // The Projects page is linked to src/components/section/projectssection/Projects.jsx
     },
     {
       name: "About Me",
       link: "/aboutme",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconUser className={iconClass} />,
     },
     {
       name: "Contact Me",
       link: "/contactme",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
+      icon: <IconMessage className={iconClass} />,
     },
   ];
 

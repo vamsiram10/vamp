@@ -26,7 +26,14 @@ function Navbar() {
     _s();
     // Sound effect: a short click sound (public domain)
     // You can replace the URL with your own sound file if desired
-    const clickAudioRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(("TURBOPACK compile-time truthy", 1) ? new Audio("/gtasanhoverone.wav") : "TURBOPACK unreachable");
+    // Avoid SSR hydration mismatch by initializing ref in useEffect
+    const clickAudioRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Navbar.useEffect": ()=>{
+            // Only run on client
+            clickAudioRef.current = new Audio("/gtasanhoverone.wav");
+        }
+    }["Navbar.useEffect"], []);
     const playClickSound = ()=>{
         if (clickAudioRef.current) {
             // Reset to start if already playing
@@ -81,15 +88,17 @@ function Navbar() {
             })["Navbar.useEffect"];
         }
     }["Navbar.useEffect"], []);
+    // Use neutral color for icons to match SSR and client
+    const iconClass = "h-4 w-4 text-violet-500 dark:text-violet-400";
     const navItems = [
         {
             name: "Home",
             link: "/",
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHome$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHome$3e$__["IconHome"], {
-                className: "h-4 w-4 text-neutral-500 dark:text-white"
+                className: iconClass
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 64,
+                lineNumber: 72,
                 columnNumber: 13
             }, this)
         },
@@ -97,18 +106,7 @@ function Navbar() {
             name: "Projects",
             link: "/projects",
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$react$2d$icons$2f$lia$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LiaProjectDiagramSolid"], {
-                className: "h-4 w-4 text-neutral-500 dark:text-white"
-            }, void 0, false, {
-                fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                lineNumber: 70,
-                columnNumber: 9
-            }, this)
-        },
-        {
-            name: "About Me",
-            link: "/aboutme",
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconUser$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconUser$3e$__["IconUser"], {
-                className: "h-4 w-4 text-neutral-500 dark:text-white"
+                className: iconClass
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
                 lineNumber: 77,
@@ -116,14 +114,25 @@ function Navbar() {
             }, this)
         },
         {
-            name: "Contact Me",
-            link: "/contactme",
-            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMessage$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMessage$3e$__["IconMessage"], {
-                className: "h-4 w-4 text-neutral-500 dark:text-white"
+            name: "About Me",
+            link: "/aboutme",
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconUser$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconUser$3e$__["IconUser"], {
+                className: iconClass
             }, void 0, false, {
                 fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
                 lineNumber: 83,
-                columnNumber: 9
+                columnNumber: 13
+            }, this)
+        },
+        {
+            name: "Contact Me",
+            link: "/contactme",
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMessage$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMessage$3e$__["IconMessage"], {
+                className: iconClass
+            }, void 0, false, {
+                fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
+                lineNumber: 88,
+                columnNumber: 13
             }, this)
         }
     ];
@@ -145,27 +154,27 @@ function Navbar() {
                             children: item.name
                         }, void 0, false, {
                             fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                            lineNumber: 106,
+                            lineNumber: 110,
                             columnNumber: 13
                         }, this)
                     ]
                 }, item.name, true, {
                     fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-                    lineNumber: 99,
+                    lineNumber: 103,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-            lineNumber: 90,
+            lineNumber: 94,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/vamp/src/components/common/navbar/Navbar.jsx",
-        lineNumber: 89,
+        lineNumber: 93,
         columnNumber: 5
     }, this);
 }
-_s(Navbar, "JzI9Q2MvCCav3vGu6AQn45fcyZo=");
+_s(Navbar, "Bp9dfV9+2jLLfpCJAO5UnuHP7sE=");
 _c = Navbar;
 const __TURBOPACK__default__export__ = Navbar;
 var _c;

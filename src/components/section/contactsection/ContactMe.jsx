@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import VortexDemo from "@/snippets/vortex/VortexDemo";
 
 const RADIUS = 150; // px, radius of the outer ring
 const INNER_RADIUS = 100; // px, radius of the inner ring
@@ -8,9 +9,14 @@ const ICON_SIZE = 60; // px
 
 export default function ContactMe() {
   return (
-    <div className="flex flex-col items-center justify-center py-16 w-full min-h-[100vh]">
+    <div className="overflow-hidden relative flex flex-col items-center justify-center py-16 w-full min-h-[100vh]">
+      {/* Vortex background as full-page bg */}
+      <div className="z-0 absolute top-50 inset-0 pointer-events-none">
+        <VortexDemo />
+      </div>
+      {/* Foreground content */}
       <div
-        className="relative"
+        className="z-10 relative"
         style={{
           width: 2 * (RADIUS + ICON_SIZE),
           height: 2 * (RADIUS + ICON_SIZE),
@@ -24,8 +30,15 @@ export default function ContactMe() {
             height: 2 * RADIUS,
             transform: "translate(-50%, -50%)",
             borderRadius: "50%",
-            border: "4px solid #60a5fa", // blue-400
-            boxShadow: "0 0 32px 0 #60a5fa44",
+            border: "4px solid transparent",
+            background: "none",
+            backgroundImage:
+              "conic-gradient(from 0deg, #7c3aed, #38bdf8, #7c3aed 100%)",
+            WebkitMask:
+              "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+            WebkitMaskComposite: "xor",
+            maskComposite: "exclude",
+            boxShadow: "0 0 32px 0 #7c3aed44, 0 0 32px 0 #38bdf844",
             zIndex: 1,
           }}
         ></div>
@@ -37,9 +50,17 @@ export default function ContactMe() {
             height: 2 * INNER_RADIUS,
             transform: "translate(-50%, -50%)",
             borderRadius: "50%",
-            border: "3px solid #38bdf8", // blue-300
-            boxShadow: "0 0 16px 0 #38bdf844",
             zIndex: 1,
+            background: "none",
+            // Use a conic-gradient border effect via mask
+            border: "3px solid transparent",
+            backgroundImage:
+              "conic-gradient(from 0deg, #7c3aed, #38bdf8, #7c3aed 100%)",
+            WebkitMask:
+              "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+            WebkitMaskComposite: "xor",
+            maskComposite: "exclude",
+            boxShadow: "0 0 16px 0 #7c3aed44, 0 0 16px 0 #38bdf844",
           }}
         ></div>
         {/* Center text */}
