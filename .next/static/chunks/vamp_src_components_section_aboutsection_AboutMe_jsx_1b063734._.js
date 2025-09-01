@@ -358,7 +358,7 @@ const AboutMe = ()=>{
                         className: "jsx-7c3c72638498207" + " " + "grid grid-cols-1 gap-12 md:grid-cols-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-7c3c72638498207" + " " + "overflow-hidden relative p-5 h-40 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-700/80 rounded-1xl border-blue-700/40 shadow-2xl transition-transform duration-300 group border hover:scale-105 hover:shadow-blue-500/40",
+                                className: "jsx-7c3c72638498207" + " " + "overflow-hidden relative p-5 h-46 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-700/80 rounded-1xl border-blue-700/40 shadow-2xl transition-transform duration-300 group border hover:scale-105 hover:shadow-blue-500/40 sm:h-45",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "jsx-7c3c72638498207" + " " + "absolute opacity-40 transition-opacity duration-300 pointer-events-none -top-8 -right-8 group-hover:opacity-70",

@@ -931,6 +931,14 @@
     height: calc(var(--spacing) * 40);
   }
 
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+
+  .h-46 {
+    height: calc(var(--spacing) * 46);
+  }
+
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
@@ -2277,9 +2285,33 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:h-45 {
+      height: calc(var(--spacing) * 45);
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:h-48 {
+      height: calc(var(--spacing) * 48);
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:h-56 {
+      height: calc(var(--spacing) * 56);
+    }
+  }
+
+  @media (min-width: 40rem) {
     .sm\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:h-60 {
+      height: calc(var(--spacing) * 60);
     }
   }
 
@@ -2310,9 +2342,21 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:h-64 {
+      height: calc(var(--spacing) * 64);
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:text-7xl {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:h-72 {
+      height: calc(var(--spacing) * 72);
     }
   }
 

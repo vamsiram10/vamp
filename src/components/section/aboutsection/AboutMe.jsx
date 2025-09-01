@@ -199,7 +199,7 @@ const AboutMe = () => {
         </h2>
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           {/* Programming Languages */}
-          <div className="overflow-hidden relative p-5 h-40 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-700/80 rounded-1xl border-blue-700/40 shadow-2xl transition-transform duration-300 group border hover:scale-105 hover:shadow-blue-500/40">
+          <div className="overflow-hidden relative p-5 h-46 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-700/80 rounded-1xl border-blue-700/40 shadow-2xl transition-transform duration-300 group border hover:scale-105 hover:shadow-blue-500/40 sm:h-45">
             <div className="absolute opacity-40 transition-opacity duration-300 pointer-events-none -top-8 -right-8 group-hover:opacity-70">
               <svg width="90" height="90" fill="none" viewBox="0 0 24 24">
                 <circle
