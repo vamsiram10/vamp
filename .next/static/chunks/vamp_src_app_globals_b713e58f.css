@@ -996,6 +996,10 @@
     height: calc(var(--spacing) * 72);
   }
 
+  .h-180 {
+    height: calc(var(--spacing) * 180);
+  }
+
   .h-200 {
     height: calc(var(--spacing) * 200);
   }
@@ -1006,6 +1010,10 @@
 
   .h-screen {
     height: 100vh;
+  }
+
+  .min-h-\[90vh\] {
+    min-height: 90vh;
   }
 
   .min-h-\[100vh\], .min-h-screen {
