@@ -159,7 +159,7 @@ const AboutMe = () => {
                     {
                       title: "Amity University Rajasthan",
                       description:
-                        "Pursuing a Bachelor's in Computer Science, maintaining a CGPA of 9.05.",
+                        "Pursuing a Bachelor's in Computer Science, maintaining a CGPA of 8.",
                       date: "2022 - 2026 (Expected)",
                       location: "Jaipur",
                       icon: (
@@ -180,11 +180,11 @@ const AboutMe = () => {
                       badge: "Education",
                     },
                     {
-                      title: "Aaditya Junior College",
+                      title: "Sri Chaitanya junior college",
                       description:
-                        "Completed Intermediate in Science with a final percentage of 98.4%.",
-                      date: "2019 - 2021",
-                      location: "Karimnagar, Telangana",
+                        "Completed Intermediate in Science with a final percentage of 80.8%.",
+                      date: "2020 - 2022",
+                      location: "Dwarakanagar , Visakhapatnam , AP ",
                       icon: (
                         <svg
                           className="w-6 h-6 text-green-400"
@@ -203,11 +203,11 @@ const AboutMe = () => {
                       badge: "Science",
                     },
                     {
-                      title: "Paramita Heritage School",
+                      title: "Ravindra Bharathi School",
                       description:
                         "Graduated 10th class (MPC) with a perfect GPA of 10.",
-                      date: "2018 - 2019",
-                      location: "Karimnagar, Telangana",
+                      date: "2019 - 2020",
+                      location: "Muralinagar , Visakhapatnam , AP ",
                       icon: (
                         <svg
                           className="w-6 h-6 text-pink-400"
@@ -645,7 +645,7 @@ const AboutMe = () => {
             <div className="flex flex-wrap justify-center gap-8">
               {/* GitHub */}
               <a
-                href="https://github.com/"
+                href="https://github.com/vamsiram10"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center transition-transform duration-200 group hover:scale-110"
@@ -664,7 +664,7 @@ const AboutMe = () => {
               </a>
               {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/ramavamsi-16v"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center transition-transform duration-200 group hover:scale-110"

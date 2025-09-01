@@ -161,7 +161,7 @@ const AboutMe = ()=>{
                                         [
                                             {
                                                 title: "Amity University Rajasthan",
-                                                description: "Pursuing a Bachelor's in Computer Science, maintaining a CGPA of 9.05.",
+                                                description: "Pursuing a Bachelor's in Computer Science, maintaining a CGPA of 8.",
                                                 date: "2022 - 2026 (Expected)",
                                                 location: "Jaipur",
                                                 icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -187,10 +187,10 @@ const AboutMe = ()=>{
                                                 badge: "Education"
                                             },
                                             {
-                                                title: "Aaditya Junior College",
-                                                description: "Completed Intermediate in Science with a final percentage of 98.4%.",
-                                                date: "2019 - 2021",
-                                                location: "Karimnagar, Telangana",
+                                                title: "Sri Chaitanya junior college",
+                                                description: "Completed Intermediate in Science with a final percentage of 80.8%.",
+                                                date: "2020 - 2022",
+                                                location: "Dwarakanagar , Visakhapatnam , AP ",
                                                 icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                     className: "w-6 h-6 text-green-400",
                                                     fill: "none",
@@ -214,10 +214,10 @@ const AboutMe = ()=>{
                                                 badge: "Science"
                                             },
                                             {
-                                                title: "Paramita Heritage School",
+                                                title: "Ravindra Bharathi School",
                                                 description: "Graduated 10th class (MPC) with a perfect GPA of 10.",
-                                                date: "2018 - 2019",
-                                                location: "Karimnagar, Telangana",
+                                                date: "2019 - 2020",
+                                                location: "Muralinagar , Visakhapatnam , AP ",
                                                 icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                     className: "w-6 h-6 text-pink-400",
                                                     fill: "none",
@@ -1175,7 +1175,7 @@ const AboutMe = ()=>{
                                 className: "flex flex-wrap justify-center gap-8",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "https://github.com/",
+                                        href: "https://github.com/vamsiram10",
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         className: "flex flex-col items-center transition-transform duration-200 group hover:scale-110",
@@ -1220,7 +1220,7 @@ const AboutMe = ()=>{
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$vamp$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "https://www.linkedin.com/",
+                                        href: "https://www.linkedin.com/in/ramavamsi-16v",
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         className: "flex flex-col items-center transition-transform duration-200 group hover:scale-110",
