@@ -2,7 +2,7 @@ var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/aboutme/pag
 R.c("server/chunks/ssr/15bfa_4a3f9a77._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__e8a2741f._.js")
 R.c("server/chunks/ssr/vamp_src_app_a1a91d67._.js")
-R.c("server/chunks/ssr/vamp_9459d47a._.js")
+R.c("server/chunks/ssr/vamp_50b04354._.js")
 R.c("server/chunks/ssr/15bfa_next_dist_client_components_3bcc3008._.js")
 R.c("server/chunks/ssr/15bfa_next_dist_client_components_builtin_forbidden_0b7086db.js")
 R.c("server/chunks/ssr/15bfa_next_dist_client_components_builtin_unauthorized_f93fbda1.js")

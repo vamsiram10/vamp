@@ -1,5 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/aboutme/page": "app/aboutme/page.js",
   "/contactme/page": "app/contactme/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",

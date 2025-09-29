@@ -11,9 +11,9 @@ export default function ContactMe() {
   return (
     <div className="overflow-hidden relative flex flex-col items-center justify-center py-16 w-full min-h-[100vh]">
       {/* Vortex background as full-page bg */}
-      <div className="z-0 absolute top-50 inset-0 pointer-events-none">
+      {/* <div className="z-0 absolute top-50 inset-0 pointer-events-none">
         <VortexDemo />
-      </div>
+      </div> */}
       {/* Foreground content */}
       <div
         className="z-10 relative"
