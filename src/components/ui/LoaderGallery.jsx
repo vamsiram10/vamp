@@ -6,7 +6,7 @@ const images = [
   "/gsap.png",
   "/python.png",
   "/react.png",
-  "/think.png",
+  "/THINK.png",
   "/html.png",
   "/java.png",
   "/PP.PNG",
@@ -29,10 +29,14 @@ export default function LoaderGallery() {
         background: "#141414",
       }}
     >
-      {/* Headed h1 */}
+      {/* Heading h1 */}
       <h1
         className="mb-6 text-[28px] font-extrabold leading-[32px] text-center uppercase"
-        style={{ letterSpacing: "0.05em", whiteSpace: "nowrap" }}
+        style={{
+          letterSpacing: "0.05em",
+          whiteSpace: "nowrap",
+          marginBottom: "3.5rem", // Add extra gap below heading
+        }}
       >
         SKILLS IN REAL-TIME I HAVE
       </h1>
@@ -63,40 +67,57 @@ export default function LoaderGallery() {
               style={{
                 display: "block",
                 position: "absolute",
-                width: 186,
-                height: 116,
+                width: 200,
+                height: 120,
                 left: 10,
                 top: 10,
-                background: "black",
-                overflow: "hidden",
-                border: "solid 5px black",
+                background: "transparent",
+                overflow: "visible",
                 ...carouselFigureStyle(idx),
               }}
             >
-              <img
-                src={src}
-                alt={`gallery-${idx + 1}`}
+              <div
+                className="violet-gradient-border"
                 style={{
-                  WebkitFilter: "grayscale(1)",
-                  filter: "grayscale(1)",
-                  cursor: "pointer",
-                  transition: "all .5s ease",
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  padding: "4px",
+                  borderRadius: "18px",
+                  background: "black",
+                  boxShadow: "0 0 15px #e040fb33",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
-                // grayscale to color & scale effect on hover
-                onMouseOver={(e) => {
-                  e.currentTarget.style.WebkitFilter = "grayscale(0)";
-                  e.currentTarget.style.filter = "grayscale(0)";
-                  e.currentTarget.style.transform = "scale(1.2, 1.2)";
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.WebkitFilter = "grayscale(1)";
-                  e.currentTarget.style.filter = "grayscale(1)";
-                  e.currentTarget.style.transform = "scale(1, 1)";
-                }}
-              />
+              >
+                <img
+                  src={src}
+                  alt={`gallery-${idx + 1}`}
+                  style={{
+                    WebkitFilter: "grayscale(1)",
+                    filter: "grayscale(1)",
+                    cursor: "pointer",
+                    transition: "all .5s ease",
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    // border property removed to ensure no border is present
+                  }}
+                  // grayscale to color & scale effect on hover
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.WebkitFilter = "grayscale(0)";
+                    e.currentTarget.style.filter = "grayscale(0)";
+                    e.currentTarget.style.transform = "scale(1.2, 1.2)";
+                    e.currentTarget.style.border = "none"; // Explicitly ensure border is none on hover
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.WebkitFilter = "grayscale(1)";
+                    e.currentTarget.style.filter = "grayscale(1)";
+                    e.currentTarget.style.transform = "scale(1, 1)";
+                    e.currentTarget.style.border = "none"; // Explicitly ensure border is none on mouse out
+                  }}
+                />
+              </div>
             </figure>
           ))}
         </div>
@@ -121,6 +142,9 @@ export default function LoaderGallery() {
         body {
           background-color: #141414 !important;
           background-image: none !important;
+        }
+        .violet-gradient-border {
+          /* border and box-shadow set in inline style */
         }
       `}</style>
     </div>

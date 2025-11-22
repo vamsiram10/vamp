@@ -7,6 +7,7 @@ import Projects from "@/components/section/projectssection/Projects";
 import Character from "@/components/ui/Character";
 import DigitalClock from "@/components/ui/DigitalClock";
 import LoaderGallery from "@/components/ui/LoaderGallery";
+import HomeSecond from "@/components/section/homesection/homeabout/HomeSecond";
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Home() {
       <HomeAbout />
       {/* <Projects /> */}
       {/* <Character /> */}
-      <DigitalClock />
+      <HomeSecond />
     </main>
   );
 }

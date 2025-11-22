@@ -1952,7 +1952,7 @@ const images = [
     "/gsap.png",
     "/python.png",
     "/react.png",
-    "/think.png",
+    "/THINK.png",
     "/html.png",
     "/java.png",
     "/PP.PNG",
@@ -1976,7 +1976,8 @@ function LoaderGallery() {
                 className: "mb-6 text-[28px] font-extrabold leading-[32px] text-center uppercase",
                 style: {
                     letterSpacing: "0.05em",
-                    whiteSpace: "nowrap"
+                    whiteSpace: "nowrap",
+                    marginBottom: "3.5rem"
                 },
                 children: "SKILLS IN REAL-TIME I HAVE"
             }, void 0, false, {
@@ -2006,63 +2007,82 @@ function LoaderGallery() {
                             style: {
                                 display: "block",
                                 position: "absolute",
-                                width: 186,
-                                height: 116,
+                                width: 200,
+                                height: 120,
                                 left: 10,
                                 top: 10,
-                                background: "black",
-                                overflow: "hidden",
-                                border: "solid 5px black",
+                                background: "transparent",
+                                overflow: "visible",
                                 ...carouselFigureStyle(idx)
                             },
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: src,
-                                alt: "gallery-".concat(idx + 1),
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "violet-gradient-border",
                                 style: {
-                                    WebkitFilter: "grayscale(1)",
-                                    filter: "grayscale(1)",
-                                    cursor: "pointer",
-                                    transition: "all .5s ease",
                                     width: "100%",
                                     height: "100%",
-                                    objectFit: "cover"
+                                    padding: "4px",
+                                    borderRadius: "18px",
+                                    background: "black",
+                                    boxShadow: "0 0 15px #e040fb33",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center"
                                 },
-                                // grayscale to color & scale effect on hover
-                                onMouseOver: (e)=>{
-                                    e.currentTarget.style.WebkitFilter = "grayscale(0)";
-                                    e.currentTarget.style.filter = "grayscale(0)";
-                                    e.currentTarget.style.transform = "scale(1.2, 1.2)";
-                                },
-                                onMouseOut: (e)=>{
-                                    e.currentTarget.style.WebkitFilter = "grayscale(1)";
-                                    e.currentTarget.style.filter = "grayscale(1)";
-                                    e.currentTarget.style.transform = "scale(1, 1)";
-                                }
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: src,
+                                    alt: "gallery-".concat(idx + 1),
+                                    style: {
+                                        WebkitFilter: "grayscale(1)",
+                                        filter: "grayscale(1)",
+                                        cursor: "pointer",
+                                        transition: "all .5s ease",
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "contain"
+                                    },
+                                    // grayscale to color & scale effect on hover
+                                    onMouseOver: (e)=>{
+                                        e.currentTarget.style.WebkitFilter = "grayscale(0)";
+                                        e.currentTarget.style.filter = "grayscale(0)";
+                                        e.currentTarget.style.transform = "scale(1.2, 1.2)";
+                                        e.currentTarget.style.border = "none"; // Explicitly ensure border is none on hover
+                                    },
+                                    onMouseOut: (e)=>{
+                                        e.currentTarget.style.WebkitFilter = "grayscale(1)";
+                                        e.currentTarget.style.filter = "grayscale(1)";
+                                        e.currentTarget.style.transform = "scale(1, 1)";
+                                        e.currentTarget.style.border = "none"; // Explicitly ensure border is none on mouse out
+                                    }
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/ui/LoaderGallery.jsx",
+                                    lineNumber: 93,
+                                    columnNumber: 17
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                                lineNumber: 76,
+                                lineNumber: 79,
                                 columnNumber: 15
                             }, this)
                         }, idx, false, {
                             fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                            lineNumber: 61,
+                            lineNumber: 65,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                    lineNumber: 50,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 40,
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
-                children: "\n        @import url('https://fonts.googleapis.com/css?family=Anaheim');\n\n        .loader-gallery-container {\n          /* margin, width, height, relative, perspective set inline */\n        }\n        .loader-gallery-carousel:hover {\n          animation-play-state: paused;\n        }\n        @keyframes loader-gallery-rotation {\n          from {\n            transform: rotateY(0deg);\n          }\n          to {\n            transform: rotateY(360deg);\n          }\n        }\n        body {\n          background-color: #141414 !important;\n          background-image: none !important;\n        }\n      "
+                children: "\n        @import url('https://fonts.googleapis.com/css?family=Anaheim');\n\n        .loader-gallery-container {\n          /* margin, width, height, relative, perspective set inline */\n        }\n        .loader-gallery-carousel:hover {\n          animation-play-state: paused;\n        }\n        @keyframes loader-gallery-rotation {\n          from {\n            transform: rotateY(0deg);\n          }\n          to {\n            transform: rotateY(360deg);\n          }\n        }\n        body {\n          background-color: #141414 !important;\n          background-image: none !important;\n        }\n        .violet-gradient-border {\n          /* border and box-shadow set in inline style */\n        }\n      "
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 104,
+                lineNumber: 125,
                 columnNumber: 7
             }, this)
         ]
@@ -2094,7 +2114,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 // Update: Mat black background (no image, matte finish)
-const clockCSS = "\nbody {\n  background: #fff !important;\n  \n}\n.digital-clock-gallery-wrapper {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: flex-start;\n  width: 100%;\n  min-height: 800px;\n  background: #141414;\n  gap: 300px;\n}\n#perspective {\n//   background: #141414;\nbackground:white;\n  height: 674px;\n  \n  perspective-origin: 450px -50px;\n  perspective: 600px;\n  position:relative;\n  /* To prevent overflow from gallery & for spacing */\n  min-width: 600px;\n  max-width: 800px;\n  flex-shrink: 0;\n}\n#clock {\n  display: flex;\n  align-items: center;\n  transform: rotateY(24deg) rotateX(-6deg) translate3d(180px, 310px, -20px);\n}\n.digit {\n  display: inline-block;\n  margin: 0 11px 0 16px;\n}\n.separator {\n  margin: 0 10px;\n}\n.cell {\n  display: inline-block;\n  width: 25px;\n  height: 25px;\n  opacity: 0.05;\n}\n.active {\n  background: linear-gradient(135deg, #8f00ff 0%, #e040fb 100%);\n  box-shadow: 0 0 15px #e040fb;\n  opacity: 10;\n  transition: opacity 0.5s;\n}\n";
+const clockCSS = "\nbody {\n  background: #fff !important;\n  \n}\n.digital-clock-gallery-wrapper {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: flex-start;\n  width: 100%;\n  min-height: 800px;\n  background: #141414;\n  gap: 200px;\n}\n#perspective {\n  background: #141414;\n// background:white;\n  height: 674px;\n  \n  perspective-origin: 450px -50px;\n  perspective: 600px;\n  position:relative;\n  /* To prevent overflow from gallery & for spacing */\n  min-width: 600px;\n  max-width: 800px;\n  flex-shrink: 0;\n}\n#clock {\n  display: flex;\n  align-items: center;\n  transform: rotateY(24deg) rotateX(-3deg) translate3d(180px, 310px, -20px);\n}\n.digit {\n  display: inline-block;\n  margin: 0 11px 0 16px;\n}\n.separator {\n  margin: 0 10px;\n}\n.cell {\n  display: inline-block;\n  width: 29px;\n  height: 29px;\n  opacity: 0.05;\n}\n.active {\n  background: linear-gradient(135deg, #8f00ff 0%, #e040fb 100%);\n  box-shadow: 0 0 15px #e040fb;\n  opacity: 10;\n  transition: opacity 0.5s;\n}\n/* Add a class for the text under the clock, matching the 3D angle */\n.clock-caption {\n  margin-top: 30px;\n  text-align: center;\n  color: #fff;\n  font-size: 2rem;\n  font-weight: 700;\n  letter-spacing: 0.05em;\n  transform: rotateY(24deg) rotateX(-3deg) translate3d(180px, 325px, -40px);\n  /* Perspective on the parent handles the 3D effect */\n  text-shadow: 0 4px 20px #8f00ff77, 0 1px 12px #000c;\n  user-select: none;\n  pointer-events: none;\n}\n";
 const DIGIT_LAYOUT = [
     [
         {
@@ -2280,13 +2300,13 @@ function DigitalClock() {
                         className: classNames.trim()
                     }, cellIdx, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 163,
+                        lineNumber: 177,
                         columnNumber: 18
                     }, this);
                 })
             }, rowIdx, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 152,
+                lineNumber: 166,
                 columnNumber: 7
             }, this));
     }
@@ -2296,12 +2316,12 @@ function DigitalClock() {
                         className: cell.className
                     }, cellIdx, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 173,
+                        lineNumber: 187,
                         columnNumber: 11
                     }, this))
             }, rowIdx, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 171,
+                lineNumber: 185,
                 columnNumber: 7
             }, this));
     }
@@ -2311,7 +2331,7 @@ function DigitalClock() {
                 children: clockCSS
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 181,
+                lineNumber: 195,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2322,65 +2342,75 @@ function DigitalClock() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         id: "perspective",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            id: "clock",
-                            children: digitIDs.map((id, idx)=>id === "sep" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "digit separator",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                id: "clock",
+                                children: digitIDs.map((id, idx)=>id === "sep" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "digit separator",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
+                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                            lineNumber: 202,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, "sep-".concat(idx), false, {
                                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                        lineNumber: 188,
-                                        columnNumber: 19
-                                    }, this)
-                                }, "sep-".concat(idx), false, {
-                                    fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                    lineNumber: 187,
-                                    columnNumber: 17
-                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    id: id,
-                                    className: "digit",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
-                                        digit: getDigitVal(time, id)
-                                    }, void 0, false, {
+                                        lineNumber: 201,
+                                        columnNumber: 17
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        id: id,
+                                        className: "digit",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
+                                            digit: getDigitVal(time, id)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                            lineNumber: 206,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, id, false, {
                                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                        lineNumber: 192,
-                                        columnNumber: 19
-                                    }, this)
-                                }, id, false, {
-                                    fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                    lineNumber: 191,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                            lineNumber: 184,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                                        lineNumber: 205,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                lineNumber: 198,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "clock-caption",
+                                children: '"LEARNING DOESN’T PAUSE"'
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                lineNumber: 212,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 183,
+                        lineNumber: 197,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
                             display: "flex",
                             alignItems: "center",
-                            marginTop: "100px",
+                            marginTop: "15rem",
                             marginRight: "25rem"
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$LoaderGallery$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                            lineNumber: 206,
+                            lineNumber: 222,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 198,
+                        lineNumber: 214,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 182,
+                lineNumber: 196,
                 columnNumber: 7
             }, this)
         ]
@@ -2394,12 +2424,120 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/app/page.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/src/components/section/homesection/homeabout/HomeSecond.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
-const e = new Error("Could not parse module '[project]/src/app/page.js'\n\nExpression expected");
-e.code = 'MODULE_UNPARSABLE';
-throw e;
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$DigitalClock$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/DigitalClock.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+// The height: "100vh" style works, but if the DigitalClock (or its children)
+// have internal heights or wrappers with their own heights/min-heights/flex layouts
+// (as seen in digital-clock-gallery-wrapper with min-height: 800px),
+// those styles can override or ignore the parent height.
+// To ensure the height works, you may need to ensure both this wrapper and
+// the children are using 100%/100vh and no overriding min/max heights
+// or incompatible flex layouts.
+const HomeSecond = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$DigitalClock$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+        fileName: "[project]/src/components/section/homesection/homeabout/HomeSecond.jsx",
+        lineNumber: 14,
+        columnNumber: 10
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_c = HomeSecond;
+const __TURBOPACK__default__export__ = HomeSecond;
+var _c;
+__turbopack_context__.k.register(_c, "HomeSecond");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/app/page.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lenis$2f$dist$2f$lenis$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lenis/dist/lenis.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section$2f$homesection$2f$homeabout$2f$HomeAbout$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/section/homesection/homeabout/HomeAbout.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section$2f$projectssection$2f$Projects$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/section/projectssection/Projects.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Character$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/Character.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$DigitalClock$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/DigitalClock.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$LoaderGallery$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/LoaderGallery.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section$2f$homesection$2f$homeabout$2f$HomeSecond$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/section/homesection/homeabout/HomeSecond.jsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+function Home() {
+    _s();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Home.useEffect": ()=>{
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+             // only run on client
+            const lenis = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lenis$2f$dist$2f$lenis$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]({
+                duration: 1.2,
+                easing: {
+                    "Home.useEffect": (t)=>t
+                }["Home.useEffect"],
+                smooth: true
+            });
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+            return ({
+                "Home.useEffect": ()=>lenis.destroy()
+            })["Home.useEffect"];
+        }
+    }["Home.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section$2f$homesection$2f$homeabout$2f$HomeAbout$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/page.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section$2f$homesection$2f$homeabout$2f$HomeSecond$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/page.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/page.js",
+        lineNumber: 33,
+        columnNumber: 5
+    }, this);
+}
+_s(Home, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c = Home;
+var _c;
+__turbopack_context__.k.register(_c, "Home");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
 }),
 ]);
 
-//# sourceMappingURL=src_0ab7b0b1._.js.map
+//# sourceMappingURL=src_c9daa03b._.js.map

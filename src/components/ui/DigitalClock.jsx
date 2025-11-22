@@ -4,7 +4,8 @@ import LoaderGallery from "./LoaderGallery";
 // Update: Mat black background (no image, matte finish)
 const clockCSS = `
 body {
-  background:#141414 !important;
+  background: #fff !important;
+  
 }
 .digital-clock-gallery-wrapper {
   display: flex;
@@ -14,15 +15,16 @@ body {
   width: 100%;
   min-height: 800px;
   background: #141414;
-  gap: 300px;
+  gap: 200px;
 }
 #perspective {
   background: #141414;
+// background:white;
   height: 674px;
+  
   perspective-origin: 450px -50px;
   perspective: 600px;
   position:relative;
-  top: 0;
   /* To prevent overflow from gallery & for spacing */
   min-width: 600px;
   max-width: 800px;
@@ -31,7 +33,7 @@ body {
 #clock {
   display: flex;
   align-items: center;
-  transform: rotateY(24deg) rotateX(-6deg) translate3d(180px, 310px, -20px);
+  transform: rotateY(24deg) rotateX(-3deg) translate3d(180px, 310px, -20px);
 }
 .digit {
   display: inline-block;
@@ -42,8 +44,8 @@ body {
 }
 .cell {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 29px;
+  height: 29px;
   opacity: 0.05;
 }
 .active {
@@ -51,6 +53,20 @@ body {
   box-shadow: 0 0 15px #e040fb;
   opacity: 10;
   transition: opacity 0.5s;
+}
+/* Add a class for the text under the clock, matching the 3D angle */
+.clock-caption {
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transform: rotateY(24deg) rotateX(-3deg) translate3d(180px, 325px, -40px);
+  /* Perspective on the parent handles the 3D effect */
+  text-shadow: 0 4px 20px #8f00ff77, 0 1px 12px #000c;
+  user-select: none;
+  pointer-events: none;
 }
 `;
 
@@ -177,7 +193,7 @@ export default function DigitalClock() {
   return (
     <>
       <style>{clockCSS}</style>
-      <div className="digital-clock-gallery-wrapper">
+      <div className="digital-clock-gallery-wrapper" style={{ height: "60vh" }}>
         <div id="perspective">
           <div id="clock">
             {digitIDs.map((id, idx) =>
@@ -192,12 +208,14 @@ export default function DigitalClock() {
               )
             )}
           </div>
+          {/* Caption text below the clock, with the same 3D transform */}
+          <div className="clock-caption">"LEARNING DOESN’T PAUSE"</div>
         </div>
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            marginTop: "85px",
+            marginTop: "15rem",
             marginRight: "25rem",
           }}
         >
