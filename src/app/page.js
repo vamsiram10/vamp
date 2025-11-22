@@ -3,6 +3,10 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import HomeAbout from "@/components/section/homesection/homeabout/HomeAbout";
+import Projects from "@/components/section/projectssection/Projects";
+import Character from "@/components/ui/Character";
+import DigitalClock from "@/components/ui/DigitalClock";
+import LoaderGallery from "@/components/ui/LoaderGallery";
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +31,9 @@ export default function Home() {
   return (
     <main>
       <HomeAbout />
+      {/* <Projects /> */}
+      {/* <Character /> */}
+      <DigitalClock />
     </main>
   );
 }

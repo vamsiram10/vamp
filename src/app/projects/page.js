@@ -102,6 +102,8 @@ export default function HomePage() {
       ref={mainContainer}
       className="relative min-h-screen w-screen overflow-x-hidden"
       style={{
+        background: "#181818", // mat black
+        backgroundColor: "#181818", // mat black for fallback
         overflowY: "auto",
         overflowX: "hidden",
         scrollbarWidth: "none", // For Firefox
@@ -117,6 +119,16 @@ export default function HomePage() {
           main {
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
+            background: #181818 !important; /* mat black */
+            background-color: #181818 !important; /* mat black */
+          }
+          body {
+            background: #181818 !important; /* mat black */
+            background-color: #181818 !important;
+          }
+          html {
+            background: #181818 !important; /* mat black */
+            background-color: #181818 !important;
           }
         `}
       </style>
