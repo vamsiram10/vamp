@@ -5,10 +5,6 @@ import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 
 export function Navbar() {
-  // Sound effect: a short click sound (public domain)
-  // You can replace the URL with your own sound file if desired
-
-  // Avoid SSR hydration mismatch by initializing ref in useEffect
   const clickAudioRef = useRef(null);
 
   useEffect(() => {

@@ -433,7 +433,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 ;
 ;
 ;
-const DEFAULT_CHARSET = "R.V.R.VAMSI";
+const DEFAULT_CHARSET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[];:,.<>/?";
 function generateRandomCharacter(charset) {
     const index = Math.floor(Math.random() * charset.length);
     return charset.charAt(index);
@@ -447,7 +447,7 @@ function generateGibberishPreservingSpaces(original, charset) {
     }
     return result;
 }
-const EncryptedText = ({ text, className, revealDelayMs = 50, charset = DEFAULT_CHARSET, flipDelayMs = 50, encryptedClassName, revealedClassName })=>{
+const EncryptedText = ({ text, className, revealDelayMs = 100, charset = DEFAULT_CHARSET, flipDelayMs = 100, encryptedClassName, revealedClassName })=>{
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const isInView = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useInView"])(ref, {
         once: true
@@ -458,11 +458,7 @@ const EncryptedText = ({ text, className, revealDelayMs = 50, charset = DEFAULT_
     const lastFlipTimeRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(0);
     const scrambleCharsRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(text ? generateGibberishPreservingSpaces(text, charset).split("") : []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        // If not in view, don't show anything
-        if (!isInView) {
-            setRevealCount(0);
-            return;
-        }
+        if (!isInView) return;
         // Reset state for a fresh animation whenever dependencies change
         const initial = text ? generateGibberishPreservingSpaces(text, charset) : "";
         scrambleCharsRef.current = initial.split("");
@@ -509,8 +505,7 @@ const EncryptedText = ({ text, className, revealDelayMs = 50, charset = DEFAULT_
         charset,
         flipDelayMs
     ]);
-    // If text is not provided, or not in view, render nothing
-    if (!text || !isInView) return null;
+    if (!text) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
         ref: ref,
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(className),
@@ -524,13 +519,13 @@ const EncryptedText = ({ text, className, revealDelayMs = 50, charset = DEFAULT_
                 children: displayChar
             }, index, false, {
                 fileName: "[project]/src/components/ui/encrypted-text.jsx",
-                lineNumber: 125,
+                lineNumber: 121,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0));
         })
     }, void 0, false, {
         fileName: "[project]/src/components/ui/encrypted-text.jsx",
-        lineNumber: 110,
+        lineNumber: 106,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1624,36 +1619,86 @@ const HomeAbout = ()=>{
         className: "relative w-full min-h-screen text-white bg-[#141414]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "z-0 absolute inset-0",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$background$2d$beams$2d$with$2d$collision$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BackgroundBeamsWithCollision"], {}, void 0, false, {
+                    fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "z-10 relative flex flex-col justify-center px-12 w-full min-h-screen",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-[120px] font-extrabold leading-[120px]",
-                        children: "R.V"
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$encrypted$2d$text$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EncryptedText"], {
+                            text: "R.V",
+                            revealedClassName: "",
+                            encryptedClassName: "text-violet-400",
+                            revealDelayMs: 30,
+                            flipDelayMs: 48
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                        lineNumber: 13,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-[120px] font-extrabold leading-[120px]",
-                        children: "RAMA VAMSI"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "inline-block",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-[120px] font-extrabold leading-[120px]",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$encrypted$2d$text$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EncryptedText"], {
+                                text: "RAMA VAMSI",
+                                revealedClassName: "",
+                                encryptedClassName: "text-violet-400",
+                                revealDelayMs: 30,
+                                flipDelayMs: 48
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                        lineNumber: 14,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-10 max-w-[900px] text-[20px] font-medium leading-8",
-                        children: "I AM A WEB DEVELOPER AND DESIGNER | PYTHON PROGRAMMING | REACT DEVELOPER | NEXT.JS DEVELOPER | NODE.JS DEVELOPER |"
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$encrypted$2d$text$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EncryptedText"], {
+                            text: "I AM A WEB DEVELOPER AND DESIGNER | PYTHON PROGRAMMING | REACT DEVELOPER | NEXT.JS DEVELOPER | NODE.JS DEVELOPER |",
+                            className: "",
+                            revealedClassName: "",
+                            encryptedClassName: "text-violet-400",
+                            revealDelayMs: 25,
+                            flipDelayMs: 50
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                        lineNumber: 19,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                lineNumber: 11,
+                lineNumber: 15,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1663,12 +1708,12 @@ const HomeAbout = ()=>{
                 className: "z-20 absolute top-1/2 hidden pointer-events-none md:block",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$Character$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                    lineNumber: 29,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/section/homesection/homeabout/HomeAbout.jsx",
-                lineNumber: 25,
+                lineNumber: 53,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -2573,7 +2618,7 @@ const carouselFigureStyle = (idx)=>{
 function LoaderGallery() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         style: {
-            minHeight: "100vh",
+            minHeight: "60vh",
             background: "#141414"
         },
         children: [
@@ -2597,7 +2642,7 @@ function LoaderGallery() {
                     width: 210,
                     height: 140,
                     position: "relative",
-                    perspective: "1000px"
+                    perspective: "800px"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "loader-gallery-carousel",
@@ -2735,13 +2780,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$L
 ;
 ;
 ;
-// Update: Mat black background (no image, matte finish)
 const clockCSS = `
 body {
-  background: #fff !important;
-  
+  background: #141414 !important;  
 }
 .digital-clock-gallery-wrapper {
+  background: #141414 !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2750,16 +2794,16 @@ body {
   min-height: 800px;
   background: #141414;
   gap: 200px;
+  position: relative;
+  z-index: 1;
 }
 #perspective {
-  background: #141414;
-// background:white;
+  background: #141414 !important;
+  margin-left: 5rem;
   height: 674px;
-  
   perspective-origin: 450px -50px;
   perspective: 600px;
-  position:relative;
-  /* To prevent overflow from gallery & for spacing */
+  position: relative;
   min-width: 600px;
   max-width: 800px;
   flex-shrink: 0;
@@ -2771,10 +2815,18 @@ body {
 }
 .digit {
   display: inline-block;
-  margin: 0 11px 0 16px;
+  margin: 0 11px 1px 16px;
 }
 .separator {
   margin: 0 10px;
+}
+.digit.no-gap {
+  margin-right: 1 !important;
+  margin-left: 0 !important;
+}
+.separator.no-gap {
+  margin-right: 1 !important;
+  margin-left: 0 !important;
 }
 .cell {
   display: inline-block;
@@ -2980,13 +3032,13 @@ function DigitalClock() {
                         className: classNames.trim()
                     }, cellIdx, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 177,
+                        lineNumber: 184,
                         columnNumber: 18
                     }, this);
                 })
             }, rowIdx, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 166,
+                lineNumber: 173,
                 columnNumber: 7
             }, this));
     }
@@ -2996,12 +3048,12 @@ function DigitalClock() {
                         className: cell.className
                     }, cellIdx, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 187,
+                        lineNumber: 194,
                         columnNumber: 11
                     }, this))
             }, rowIdx, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 185,
+                lineNumber: 192,
                 columnNumber: 7
             }, this));
     }
@@ -3011,49 +3063,112 @@ function DigitalClock() {
                 children: clockCSS
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 195,
+                lineNumber: 202,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "digital-clock-gallery-wrapper",
                 style: {
-                    height: "60vh"
+                    height: "60vh",
+                    position: "relative",
+                    zIndex: 1,
+                    background: "#141414"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         id: "perspective",
+                        style: {
+                            position: "relative",
+                            zIndex: 2,
+                            background: "#141414"
+                        },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 id: "clock",
-                                children: digitIDs.map((id, idx)=>id === "sep" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "digit separator",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
+                                children: digitIDs.map((id, idx, arr)=>{
+                                    // Remove gap after the hour-minute separator
+                                    // idx=2 is the first separator (: between hours and mins)
+                                    // Remove margin-right for "h2" (idx=1) and margin-left/right for first "sep" (idx=2) and for min1 (idx=3)
+                                    if (id === "sep" && idx === 2) {
+                                        // This is the hour-minute separator
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "digit separator no-gap",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
+                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                                lineNumber: 225,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, `sep-${idx}`, false, {
                                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                            lineNumber: 202,
+                                            lineNumber: 224,
                                             columnNumber: 19
-                                        }, this)
-                                    }, `sep-${idx}`, false, {
-                                        fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                        lineNumber: 201,
-                                        columnNumber: 17
-                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        id: id,
-                                        className: "digit",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
-                                            digit: getDigitVal(time, id)
-                                        }, void 0, false, {
+                                        }, this);
+                                    } else if (idx === 1 /* h2 */ ) {
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            id: id,
+                                            className: "digit no-gap",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
+                                                digit: getDigitVal(time, id)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                                lineNumber: 231,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, id, false, {
                                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                            lineNumber: 206,
+                                            lineNumber: 230,
                                             columnNumber: 19
-                                        }, this)
-                                    }, id, false, {
-                                        fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                        lineNumber: 205,
-                                        columnNumber: 17
-                                    }, this))
+                                        }, this);
+                                    } else if (idx === 3 /* m1 */ ) {
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            id: id,
+                                            className: "digit no-gap",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
+                                                digit: getDigitVal(time, id)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                                lineNumber: 237,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, id, false, {
+                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                            lineNumber: 236,
+                                            columnNumber: 19
+                                        }, this);
+                                    } else if (id === "sep") {
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "digit separator",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
+                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                                lineNumber: 245,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, `sep-${idx}`, false, {
+                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                            lineNumber: 244,
+                                            columnNumber: 19
+                                        }, this);
+                                    } else {
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            id: id,
+                                            className: "digit",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
+                                                digit: getDigitVal(time, id)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                                lineNumber: 251,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, id, false, {
+                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                            lineNumber: 250,
+                                            columnNumber: 19
+                                        }, this);
+                                    }
+                                })
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                lineNumber: 198,
+                                lineNumber: 216,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3061,13 +3176,13 @@ function DigitalClock() {
                                 children: '"LEARNING DOESN’T PAUSE"'
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                lineNumber: 212,
+                                lineNumber: 258,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 197,
+                        lineNumber: 212,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3075,22 +3190,24 @@ function DigitalClock() {
                             display: "flex",
                             alignItems: "center",
                             marginTop: "15rem",
-                            marginRight: "25rem"
+                            marginRight: "25rem",
+                            zIndex: 3,
+                            background: "#141414"
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$LoaderGallery$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                            lineNumber: 222,
+                            lineNumber: 270,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 214,
+                        lineNumber: 260,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 196,
+                lineNumber: 203,
                 columnNumber: 7
             }, this)
         ]
@@ -3111,18 +3228,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
-// The height: "100vh" style works, but if the DigitalClock (or its children)
-// have internal heights or wrappers with their own heights/min-heights/flex layouts
-// (as seen in digital-clock-gallery-wrapper with min-height: 800px),
-// those styles can override or ignore the parent height.
-// To ensure the height works, you may need to ensure both this wrapper and
-// the children are using 100%/100vh and no overriding min/max heights
-// or incompatible flex layouts.
 const HomeSecond = ()=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$DigitalClock$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        style: {
+            width: "100%",
+            minHeight: "100vh",
+            background: "#141414"
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$DigitalClock$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/src/components/section/homesection/homeabout/HomeSecond.jsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
         fileName: "[project]/src/components/section/homesection/homeabout/HomeSecond.jsx",
-        lineNumber: 14,
-        columnNumber: 10
+        lineNumber: 7,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
 const __TURBOPACK__default__export__ = HomeSecond;

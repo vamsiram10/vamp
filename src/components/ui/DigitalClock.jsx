@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import LoaderGallery from "./LoaderGallery";
 
-// Update: Mat black background (no image, matte finish)
 const clockCSS = `
 body {
-  background: #fff !important;
-  
+  background: #141414 !important;  
 }
 .digital-clock-gallery-wrapper {
+  background: #141414 !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,16 +15,16 @@ body {
   min-height: 800px;
   background: #141414;
   gap: 200px;
+  position: relative;
+  z-index: 1;
 }
 #perspective {
-  background: #141414;
-// background:white;
+  background: #141414 !important;
+  margin-left: 5rem;
   height: 674px;
-  
   perspective-origin: 450px -50px;
   perspective: 600px;
-  position:relative;
-  /* To prevent overflow from gallery & for spacing */
+  position: relative;
   min-width: 600px;
   max-width: 800px;
   flex-shrink: 0;
@@ -37,10 +36,18 @@ body {
 }
 .digit {
   display: inline-block;
-  margin: 0 11px 0 16px;
+  margin: 0 11px 1px 16px;
 }
 .separator {
   margin: 0 10px;
+}
+.digit.no-gap {
+  margin-right: 1 !important;
+  margin-left: 0 !important;
+}
+.separator.no-gap {
+  margin-right: 1 !important;
+  margin-left: 0 !important;
 }
 .cell {
   display: inline-block;
@@ -58,7 +65,7 @@ body {
 .clock-caption {
   margin-top: 30px;
   text-align: center;
-  color: #fff;
+  color:;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -193,20 +200,59 @@ export default function DigitalClock() {
   return (
     <>
       <style>{clockCSS}</style>
-      <div className="digital-clock-gallery-wrapper" style={{ height: "60vh" }}>
-        <div id="perspective">
+      <div
+        className="digital-clock-gallery-wrapper"
+        style={{
+          height: "60vh",
+          position: "relative",
+          zIndex: 1,
+          background: "#141414",
+        }}
+      >
+        <div
+          id="perspective"
+          style={{ position: "relative", zIndex: 2, background: "#141414" }}
+        >
           <div id="clock">
-            {digitIDs.map((id, idx) =>
-              id === "sep" ? (
-                <div className="digit separator" key={`sep-${idx}`}>
-                  <Separator />
-                </div>
-              ) : (
-                <div id={id} className="digit" key={id}>
-                  <DigitRows digit={getDigitVal(time, id)} />
-                </div>
-              )
-            )}
+            {digitIDs.map((id, idx, arr) => {
+              // Remove gap after the hour-minute separator
+              // idx=2 is the first separator (: between hours and mins)
+              // Remove margin-right for "h2" (idx=1) and margin-left/right for first "sep" (idx=2) and for min1 (idx=3)
+              if (id === "sep" && idx === 2) {
+                // This is the hour-minute separator
+                return (
+                  <div className="digit separator no-gap" key={`sep-${idx}`}>
+                    <Separator />
+                  </div>
+                );
+              } else if (idx === 1 /* h2 */) {
+                return (
+                  <div id={id} className="digit no-gap" key={id}>
+                    <DigitRows digit={getDigitVal(time, id)} />
+                  </div>
+                );
+              } else if (idx === 3 /* m1 */) {
+                return (
+                  <div id={id} className="digit no-gap" key={id}>
+                    <DigitRows digit={getDigitVal(time, id)} />
+                  </div>
+                );
+              }
+              // The other separator should retain their margin/gap
+              else if (id === "sep") {
+                return (
+                  <div className="digit separator" key={`sep-${idx}`}>
+                    <Separator />
+                  </div>
+                );
+              } else {
+                return (
+                  <div id={id} className="digit" key={id}>
+                    <DigitRows digit={getDigitVal(time, id)} />
+                  </div>
+                );
+              }
+            })}
           </div>
           {/* Caption text below the clock, with the same 3D transform */}
           <div className="clock-caption">"LEARNING DOESN’T PAUSE"</div>
@@ -217,6 +263,8 @@ export default function DigitalClock() {
             alignItems: "center",
             marginTop: "15rem",
             marginRight: "25rem",
+            zIndex: 3,
+            background: "#141414",
           }}
         >
           <LoaderGallery />

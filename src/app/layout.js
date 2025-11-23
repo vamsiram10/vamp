@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/common/navbar/Navbar";
 import ParticleCanvas from "@/components/ui/ParticleCanvas";
 import { useEffect, useState } from "react";
+import Footer from "@/components/common/navbar/footer";
 
 function RootLayout({ children }) {
   const [loading, setLoading] = useState(true);
@@ -39,6 +40,10 @@ function RootLayout({ children }) {
               <Navbar />
             </header>
             {children}
+            <footer>
+              {/* Assuming you have a Footer component at this path */}
+              <Footer />
+            </footer>
           </>
         )}
       </body>

@@ -25,7 +25,7 @@ export default function LoaderGallery() {
   return (
     <div
       style={{
-        minHeight: "100vh",
+        minHeight: "60vh",
         background: "#141414",
       }}
     >
@@ -48,7 +48,7 @@ export default function LoaderGallery() {
           width: 210,
           height: 140,
           position: "relative",
-          perspective: "1000px",
+          perspective: "800px",
         }}
       >
         <div

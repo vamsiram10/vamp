@@ -3,7 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
 import { cn } from "@/lib/utils";
 
-const DEFAULT_CHARSET = "R.V.R.VAMSI";
+const DEFAULT_CHARSET =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[];:,.<>/?";
 
 function generateRandomCharacter(charset) {
   const index = Math.floor(Math.random() * charset.length);
@@ -23,9 +24,9 @@ function generateGibberishPreservingSpaces(original, charset) {
 export const EncryptedText = ({
   text,
   className,
-  revealDelayMs = 50,
+  revealDelayMs = 100,
   charset = DEFAULT_CHARSET,
-  flipDelayMs = 50,
+  flipDelayMs = 100,
   encryptedClassName,
   revealedClassName,
 }) => {
@@ -41,11 +42,7 @@ export const EncryptedText = ({
   );
 
   useEffect(() => {
-    // If not in view, don't show anything
-    if (!isInView) {
-      setRevealCount(0);
-      return;
-    }
+    if (!isInView) return;
 
     // Reset state for a fresh animation whenever dependencies change
     const initial = text
@@ -103,8 +100,7 @@ export const EncryptedText = ({
     };
   }, [isInView, text, revealDelayMs, charset, flipDelayMs]);
 
-  // If text is not provided, or not in view, render nothing
-  if (!text || !isInView) return null;
+  if (!text) return null;
 
   return (
     <motion.span

@@ -8,6 +8,8 @@ import Character from "@/components/ui/Character";
 import DigitalClock from "@/components/ui/DigitalClock";
 import LoaderGallery from "@/components/ui/LoaderGallery";
 import HomeSecond from "@/components/section/homesection/homeabout/HomeSecond";
+import CustomCursor from "@/components/ui/CustomCursor";
+import HomeMe from "@/components/section/homesection/homeabout/HomeMe";
 
 export default function Home() {
   useEffect(() => {
@@ -31,7 +33,9 @@ export default function Home() {
 
   return (
     <main>
+      <CustomCursor />
       <HomeAbout />
+      <HomeMe />
       {/* <Projects /> */}
       {/* <Character /> */}
       <HomeSecond />
