@@ -1,34 +1,3 @@
-import React from "react";
-import { useConfetti } from "./useConfetti"; // adjust path if needed
-
-/**
- * Example Confetti Demo
- * This replicates the <template>... code provided in Vue, adapted for React.
- */
-export default function ConfettiDemo() {
-  const { confetti } = useConfetti();
-
-  const handleClick = () => {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-    });
-  };
-
-  return (
-    <main className="flex justify-center items-center w-screen h-screen">
-      <button
-        type="button"
-        onClick={handleClick}
-        className="px-6 py-2 text-white bg-blue-600 rounded shadow hover:bg-blue-700 transition"
-      >
-        Run basic cannon
-      </button>
-    </main>
-  );
-}
-
-// The hook implementation remains the same as previous:
 import CanvasConfetti from "canvas-confetti";
 
 /**
@@ -87,10 +56,14 @@ confetti.shapeFromText = (options) => {
   return CanvasConfetti.shapeFromText({ ...options });
 };
 
-const useConfetti = () => {
+/**
+ * Simple React hook that exposes the confetti function.
+ * @returns {{ confetti: typeof confetti }}
+ */
+function useConfetti() {
   return {
     confetti,
   };
-};
+}
 
 export { useConfetti };

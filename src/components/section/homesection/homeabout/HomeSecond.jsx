@@ -14,6 +14,7 @@ const HomeSecond = () => {
       }}
     >
       <GlowyDivider direction="top" />
+
       <DigitalClock />
     </div>
   );

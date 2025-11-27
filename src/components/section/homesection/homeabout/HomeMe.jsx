@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-
+import { useConfetti } from "@/components/ui/useConfetti";
 // SVGs for some popular logos (simple + lightweight, or use emoji fallback)
 const icons = [
   {

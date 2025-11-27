@@ -111,15 +111,36 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center gap-2 mt-10 pt-4 text-center text-xs text-gray-500 border-t border-gray-800">
-        <span>Everyday should be extraordinary!!!</span>
         <button
+          type="button"
+          onClick={(e) => {
+            // Only trigger confetti if we're in the footer
+            // Find the closest footer element up the DOM tree
+            let node = e.currentTarget;
+            let isInFooter = false;
+            while (node) {
+              if (node.tagName && node.tagName.toLowerCase() === "footer") {
+                isInFooter = true;
+                break;
+              }
+              node = node.parentElement;
+            }
+            if (isInFooter && typeof handleConfetti === "function") {
+              handleConfetti(e);
+            }
+          }}
+          className="px-3 py-1 text-xs font-semibold text-white bg-violet-500 rounded-full hover:bg-violet-400 transition"
+        >
+          Everyday should be extraordinary!!!
+        </button>
+        {/* <button
           type="button"
           onClick={handleConfetti}
           aria-label="Celebrate"
           className="ml-2 px-2 py-1 text-black font-bold text-xs bg-yellow-400 rounded-full hover:bg-yellow-300 transition"
         >
-          🎉
-        </button>
+          CLICK ME
+        </button> */}
       </div>
     </footer>
   );
