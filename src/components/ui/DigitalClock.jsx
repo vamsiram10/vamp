@@ -3,10 +3,10 @@ import LoaderGallery from "./LoaderGallery";
 
 const clockCSS = `
 body {
-  background: #141414 !important;  
+  background: #000 !important;
 }
 .digital-clock-gallery-wrapper {
-  background: #141414 !important;
+  background: #000 !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -19,7 +19,7 @@ body {
   z-index: 1;
 }
 #perspective {
-  background: #141414 !important;
+  background: #000 !important;
   margin-left: 5rem;
   height: 674px;
   perspective-origin: 450px -50px;
@@ -74,6 +74,59 @@ body {
   text-shadow: 0 4px 20px #8f00ff77, 0 1px 12px #000c;
   user-select: none;
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .digital-clock-gallery-wrapper {
+    flex-direction: column !important;
+    gap: 0 !important;
+    min-height: 500px;
+    height: auto !important;
+  }
+  #perspective {
+    margin-left: 0 !important;
+    min-width: unset !important;
+    max-width: 100vw !important;
+    width: 100vw !important;
+    height: auto !important;
+    perspective-origin: center top !important;
+    perspective: 400px !important;
+  }
+  #clock {
+    transform: none !important;
+    justify-content: center !important;
+    margin-top: 1.5rem !important;
+    /* scale the clock down in mobile, smaller than before */
+    scale: 0.6 !important;
+  }
+  .digit {
+    /* Reduce digit margin for smaller mobile clock */
+    margin: 0 4px 0.5px 5px !important;
+  }
+  .separator {
+    margin: 0 3px !important;
+  }
+  /* Make clock segments smaller on mobile for a smaller clock face */
+  .cell,
+  .active.cell {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .clock-caption {
+    transform: none !important;
+    margin-top: 1.5rem !important;
+    font-size: 1.2rem !important;
+    text-shadow: 0 2px 12px #8f00ff77, 0 1px 8px #000c;
+  }
+  .loader-gallery-mobile {
+    margin-top: 2.5rem !important;
+    margin-right: 0 !important;
+    justify-content: center !important;
+    width: 100vw !important;
+    background: #000 !important;
+    /* Add extra margin to provide gap between clock and loader gallery */
+    margin-bottom: 2.5rem !important;
+  }
 }
 `;
 
@@ -146,6 +199,7 @@ export default function DigitalClock() {
     s1: 0,
     s2: 0,
   });
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const updateClock = () => {
@@ -166,6 +220,16 @@ export default function DigitalClock() {
     updateClock();
     const interval = setInterval(updateClock, 1000);
     return () => clearInterval(interval);
+  }, []);
+
+  // Mobile detection logic
+  useEffect(() => {
+    function checkMobile() {
+      setIsMobile(window.innerWidth <= 768);
+    }
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   function DigitRows({ digit }) {
@@ -206,14 +270,39 @@ export default function DigitalClock() {
           height: "60vh",
           position: "relative",
           zIndex: 1,
-          background: "#141414",
+          background: "#000",
+          flexDirection: isMobile ? "column" : undefined,
+          gap: isMobile ? 0 : undefined,
+          minHeight: isMobile ? "500px" : undefined,
         }}
       >
         <div
           id="perspective"
-          style={{ position: "relative", zIndex: 2, background: "#141414" }}
+          style={{
+            position: "relative",
+            zIndex: 2,
+            background: "#000",
+            marginLeft: isMobile ? 0 : undefined,
+            minWidth: isMobile ? undefined : "600px",
+            maxWidth: isMobile ? "100vw" : "800px",
+            width: isMobile ? "100vw" : undefined,
+            height: isMobile ? "auto" : "674px",
+            perspectiveOrigin: isMobile ? "center top" : "450px -50px",
+            perspective: isMobile ? "400px" : "600px",
+          }}
         >
-          <div id="clock">
+          <div
+            id="clock"
+            style={{
+              transform: isMobile
+                ? "none"
+                : "rotateY(24deg) rotateX(-3deg) translate3d(180px, 310px, -20px)",
+              justifyContent: isMobile ? "center" : undefined,
+              marginTop: isMobile ? "1.5rem" : undefined,
+              // On mobile, scale up the clock more than before (was 0.6, now 0.85)
+              scale: isMobile ? "4" : undefined,
+            }}
+          >
             {digitIDs.map((id, idx, arr) => {
               // Remove gap after the hour-minute separator
               // idx=2 is the first separator (: between hours and mins)
@@ -255,20 +344,55 @@ export default function DigitalClock() {
             })}
           </div>
           {/* Caption text below the clock, with the same 3D transform */}
-          <div className="clock-caption">"LEARNING DOESN’T PAUSE"</div>
+          <div
+            className="clock-caption"
+            style={{
+              transform: isMobile
+                ? "none"
+                : "rotateY(24deg) rotateX(-3deg) translate3d(180px, 325px, -40px)",
+              marginTop: isMobile ? "1.5rem" : "30px",
+              fontSize: isMobile ? "1.2rem" : "2rem",
+              textShadow: isMobile
+                ? "0 2px 12px #8f00ff77, 0 1px 8px #000c"
+                : "0 4px 20px #8f00ff77, 0 1px 12px #000c",
+            }}
+          >
+            "LEARNING DOESN’T PAUSE"
+          </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginTop: "15rem",
-            marginRight: "25rem",
-            zIndex: 3,
-            background: "#141414",
-          }}
-        >
-          <LoaderGallery />
-        </div>
+        {/* Show LoaderGallery below the clock in mobile, to the side in desktop */}
+        {isMobile ? (
+          <div
+            className="loader-gallery-mobile"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginTop: "2.5rem",
+              marginRight: 0,
+              justifyContent: "center",
+              width: "100vw",
+              zIndex: 3,
+              background: "#000",
+              // Add extra margin to create gap from clock above
+              marginBottom: "2.5rem",
+            }}
+          >
+            <LoaderGallery />
+          </div>
+        ) : (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginTop: "15rem",
+              marginRight: "25rem",
+              zIndex: 3,
+              background: "#000",
+            }}
+          >
+            <LoaderGallery />
+          </div>
+        )}
       </div>
     </>
   );

@@ -34,9 +34,9 @@ export default function Footer() {
       className="py-12 px-4 w-full text-white bg-black"
       style={{ fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif" }}
     >
-      <div className="flex flex-col justify-between gap-10 mx-auto max-w-6xl md:flex-row">
+      <div className="flex flex-col justify-between gap-5 mx-auto max-w-6xl md:flex-row">
         {/* Everyday should be legendary!!! */}
-        <div className="flex-1 flex flex-col justify-between mb-8 md:mb-0">
+        <div className="flex-1 flex flex-col justify-between mb-4 md:mb-0">
           <div>
             {/* Using Cover from cover.jsx to wrap the quote */}
             <div className="mb-2">
@@ -47,18 +47,19 @@ export default function Footer() {
               </Cover>
             </div>
 
-            <p className="mb-4 text-xs text-gray-400">
+            <p className="mb-2 text-xs text-gray-400 md:mb-4">
               Challenge yourself, chase your dreams, create a legacy.
             </p>
           </div>
         </div>
 
         {/* Links */}
-        <div className="flex-1 mb-8 md:mb-0">
-          <h3 className="mb-3 text-lg font-semibold underline underline-offset-4">
+        <div className="flex-1 mb-2 md:mb-0">
+          <h3 className="mb-2 text-lg font-semibold underline underline-offset-4 md:mb-3">
             Links
           </h3>
-          <ul className="flex flex-col gap-2">
+          {/* Remove gap between links on mobile, keep gap-2 on md+ */}
+          <ul className="flex flex-col gap-0 md:gap-2">
             {footerLinks.map((link) => (
               <li key={link.name}>
                 <Link
@@ -73,11 +74,12 @@ export default function Footer() {
         </div>
 
         {/* Services */}
-        <div className="flex-1 mb-8 md:mb-0">
-          <h3 className="mb-3 text-lg font-semibold underline underline-offset-4">
+        <div className="flex-1 mb-2 md:mb-0">
+          <h3 className="mb-2 text-lg font-semibold underline underline-offset-4 md:mb-3">
             Services
           </h3>
-          <ul className="flex flex-col gap-2">
+          {/* Remove gap between services on mobile, keep gap-2 on md+ */}
+          <ul className="flex flex-col gap-0 md:gap-2">
             {servicesLinks.map((service) => (
               <li key={service}>{service}</li>
             ))}
@@ -86,10 +88,11 @@ export default function Footer() {
 
         {/* Connect */}
         <div className="flex-1">
-          <h3 className="mb-3 text-lg font-semibold underline underline-offset-4">
+          <h3 className="mb-2 text-lg font-semibold underline underline-offset-4 md:mb-3">
             Connect
           </h3>
-          <ul className="flex flex-col gap-2">
+          {/* Remove gap between connect items on mobile, keep gap-4/gap-2 on md+ */}
+          <ul className="flex flex-col items-start items-center gap-0 gap-2 gap-4 sm:flex-row md:flex-col">
             <li>
               <a
                 href="mailto:saiprithvisuperior@gmail.com"
@@ -110,7 +113,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-2 mt-10 pt-4 text-center text-xs text-gray-500 border-t border-gray-800">
+      <div className="flex items-center justify-center gap-2 mt-10 pt-4 text-center text-xs text-gray-500 border-t border-gray-800 mobile-no-mt">
         <button
           type="button"
           onClick={(e) => {
@@ -133,15 +136,38 @@ export default function Footer() {
         >
           Everyday should be extraordinary!!!
         </button>
-        {/* <button
-          type="button"
-          onClick={handleConfetti}
-          aria-label="Celebrate"
-          className="ml-2 px-2 py-1 text-black font-bold text-xs bg-yellow-400 rounded-full hover:bg-yellow-300 transition"
-        >
-          CLICK ME
-        </button> */}
       </div>
+      {/* Mobile only: Make footer stack and Connect items side by side */}
+      <style jsx>{`
+        @media (max-width: 767px) {
+          footer > div {
+            flex-direction: column !important;
+            gap: 4 !important;
+          }
+          footer ul.sm\\:flex-row {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 1rem !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+          }
+          footer .flex-1 {
+            width: 100% !important;
+            margin-bottom: 0.5rem !important;
+          }
+          footer h3 {
+            margin-bottom: 0.5rem !important;
+          }
+          /* Remove gap between footer links/services/connect on mobile */
+          footer ul.flex-col {
+            gap: 0 !important;
+          }
+          /* Remove margin-top for the bottom action row (mt-10) only on mobile */
+          .mobile-no-mt {
+            margin-top: 0 !important;
+          }
+        }
+      `}</style>
     </footer>
   );
 }

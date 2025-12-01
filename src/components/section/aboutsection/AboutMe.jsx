@@ -8,27 +8,32 @@ const AboutMe = () => {
         <h2 className="mb-6 text-3xl font-bold text-center">
           A DEVELOPER'S JOURNEY.
         </h2>
-        <p className="mx-auto text-lg leading-relaxed text-white text-center">
-          My journey as a developer has been shaped by a deep interest in
-          front-end development and modern programming languages. I specialize
-          in building interactive, user-focused web applications using React.js
-          and the Next.js framework. My experience began with learning the
-          fundamentals of JavaScript and CSS, which gave me a strong foundation
-          in creating seamless digital experiences.
-        </p>
-        <p className="mx-auto mt-6 text-lg leading-relaxed text-white text-center">
-          As I advanced, I became passionate about leveraging the power of React
-          to build dynamic interfaces and using Next.js to optimize performance
-          and scalability. I enjoy architecting reusable components, managing
-          state efficiently, and ensuring accessibility and responsiveness
-          across devices. My projects often involve integrating APIs, handling
-          server-side rendering, and deploying full-stack solutions with
-          Next.js. I am always eager to learn new technologies and best
-          practices in the ever-evolving front-end ecosystem. This website is a
-          reflection of my skills and dedication to modern web development, and
-          I look forward to expanding it further as I continue to grow as a
-          React and Next.js developer.
-        </p>
+        <div
+          className="mx-auto text-lg leading-relaxed text-white text-justify"
+          style={{ wordSpacing: "0.1em" }}
+        >
+          <p>
+            My journey as a developer has been shaped by a deep interest in
+            front-end development and modern programming languages. I specialize
+            in building interactive, user-focused web applications using
+            React.js and the Next.js framework. My experience began with
+            learning the fundamentals of JavaScript and CSS, which gave me a
+            strong foundation in creating seamless digital experiences.
+          </p>
+          <p className="mt-6">
+            As I advanced, I became passionate about leveraging the power of
+            React to build dynamic interfaces and using Next.js to optimize
+            performance and scalability. I enjoy architecting reusable
+            components, managing state efficiently, and ensuring accessibility
+            and responsiveness across devices. My projects often involve
+            integrating APIs, handling server-side rendering, and deploying
+            full-stack solutions with Next.js. I am always eager to learn new
+            technologies and best practices in the ever-evolving front-end
+            ecosystem. This website is a reflection of my skills and dedication
+            to modern web development, and I look forward to expanding it
+            further as I continue to grow as a React and Next.js developer.
+          </p>
+        </div>
       </section>
       <section className="relative px-4 mx-auto py-12 max-w-3xl">
         <div className="flex flex-col items-center mt-16">
