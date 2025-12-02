@@ -11,29 +11,35 @@ export default function HomeMe() {
         style={{
           background: "#000",
           width: "100%",
-          // On mobile, force height: 100vh; on desktop let min-h-screen (from className) remain primary
-          height: "100vh",
         }}
       >
         {/* Left side: Retro computer */}
         <div
-          className="z-10 flex items-center mr-0 mb-0 mr-8 w-full w-1/2 md:items-start"
-          style={{ minWidth: 200, maxWidth: 350 }}
+          className="z-10 flex items-center justify-center mb-4 w-full md:items-start justify-start mr-8 w-1/2"
+          style={{
+            minWidth: 0,
+            maxWidth: 350,
+            // On mobile, adjust size & centering by keeping it flexible
+          }}
         >
           <RetroComputer />
         </div>
 
         {/* Main content, right side */}
-        <div className="z-10 flex flex-col justify-center w-full md:w-1/2">
+        <div className="z-10 flex flex-col justify-center items-center w-full text-center md:items-start w-1/2 text-left">
           <h2
-            className="mb-3 text-5xl font-bold"
+            className="mb-3 text-3xl font-bold md:text-5xl"
             style={{ position: "relative" }}
           >
             ABOUT ME
           </h2>
           <p
-            className="text-lg text-neutral-700 text-justify dark:text-neutral-300"
-            style={{ position: "relative", textAlign: "justify" }}
+            className="text-base text-neutral-700 dark:text-neutral-300 md:text-lg"
+            style={{
+              position: "relative",
+              textAlign: "justify",
+              maxWidth: 540,
+            }}
           >
             Hello! I'm a passionate developer who loves building interactive
             user interfaces and seamless web experiences. I enjoy working with a
