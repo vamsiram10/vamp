@@ -15,7 +15,7 @@ export default function HomeMe() {
       >
         {/* Left side: Retro computer */}
         <div
-          className="z-10 flex items-center justify-center mb-4 w-full md:items-start justify-start mr-8 w-1/2"
+          className="z-10 flex items-center justify-center justify-start ml-28 mb-4 mr-8 w-full w-1/2 md:items-start"
           style={{
             minWidth: 0,
             maxWidth: 350,
@@ -26,7 +26,7 @@ export default function HomeMe() {
         </div>
 
         {/* Main content, right side */}
-        <div className="z-10 flex flex-col justify-center items-center w-full text-center md:items-start w-1/2 text-left">
+        <div className="z-10 flex flex-col justify-center items-center w-full w-1/2 text-center text-left md:items-start">
           <h2
             className="mb-3 text-3xl font-bold md:text-5xl"
             style={{ position: "relative" }}
