@@ -2675,16 +2675,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var _s = __turbopack_context__.k.signature();
 ;
 // List of images (use placeholder images)
+// Update: Images should be stored in the /public directory in Next.js.
+// Make sure your images are in /public/images (relative to project root).
+// Use lowercase filenames/extensions for consistency and to prevent case issues on Vercel (Linux is case-sensitive).
 const images = [
-    "/excel.png",
-    "/gsap.png",
-    "/python.png",
-    "/react.png",
-    "/THINK.png",
-    "/html.png",
-    "/java.png",
-    "/PP.PNG",
-    "/SQL.PNG"
+    "/images/excel.png",
+    "/images/gsap.png",
+    "/images/python.png",
+    "/images/react.png",
+    "/images/think.png",
+    "/images/html.png",
+    "/images/java.png",
+    "/images/pp.png",
+    "/images/sql.png"
 ];
 // Generates the CSS for the nth-child transforms (to place the figures around the carousel)
 const carouselFigureStyle = (idx, isMobile)=>{
@@ -2747,7 +2750,7 @@ function LoaderGallery() {
                 children: "SKILLS IN REAL-TIME I HAVE"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 68,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2819,27 +2822,27 @@ function LoaderGallery() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                                    lineNumber: 130,
+                                    lineNumber: 133,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                                lineNumber: 116,
+                                lineNumber: 119,
                                 columnNumber: 15
                             }, this)
                         }, idx, false, {
                             fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                            lineNumber: 102,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                    lineNumber: 91,
+                    lineNumber: 94,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 81,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
@@ -2886,13 +2889,13 @@ function LoaderGallery() {
       `
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 160,
+                lineNumber: 163,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-        lineNumber: 61,
+        lineNumber: 64,
         columnNumber: 5
     }, this);
 }

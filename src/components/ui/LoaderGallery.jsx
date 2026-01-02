@@ -1,16 +1,19 @@
 import React from "react";
 
 // List of images (use placeholder images)
+// Update: Images should be stored in the /public directory in Next.js.
+// Make sure your images are in /public/images (relative to project root).
+// Use lowercase filenames/extensions for consistency and to prevent case issues on Vercel (Linux is case-sensitive).
 const images = [
-  "/excel.png",
-  "/gsap.png",
-  "/python.png",
-  "/react.png",
-  "/THINK.png",
-  "/html.png",
-  "/java.png",
-  "/PP.PNG",
-  "/SQL.PNG",
+  "/images/excel.png",
+  "/images/gsap.png",
+  "/images/python.png",
+  "/images/react.png",
+  "/images/think.png",
+  "/images/html.png",
+  "/images/java.png",
+  "/images/pp.png",
+  "/images/sql.png",
 ];
 
 // Generates the CSS for the nth-child transforms (to place the figures around the carousel)
