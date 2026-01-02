@@ -3,7 +3,43 @@ import React from "react";
 import RetroComputer from "@/components/ui/RetroComputer";
 import GlowyDivider from "@/components/ui/GlowyDivider";
 
+// Utility hook to check if screen is desktop size (min-width: 1024px)
+function useIsDesktop() {
+  const [isDesktop, setIsDesktop] = React.useState(() => {
+    if (typeof window === "undefined") return true; // SSR fallback
+    return window.innerWidth >= 1024;
+  });
+
+  React.useEffect(() => {
+    function handleResize() {
+      setIsDesktop(window.innerWidth >= 1024);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return isDesktop;
+}
+
 export default function HomeMe() {
+  const isDesktop = useIsDesktop();
+
+  if (!isDesktop) {
+    // Show only the requested message for mobile/non-desktop, as plain text (not inside an animation or box)
+    return (
+      <section
+        className="flex flex-col items-center justify-center min-h-screen bg-black"
+        style={{ width: "100%" }}
+      >
+        <p className="max-w-sm text-lg text-neutral-300 text-center">
+          For a better experience,
+          <br />
+          please open this section on a desktop.
+        </p>
+      </section>
+    );
+  }
+
   return (
     <>
       <section
@@ -15,7 +51,7 @@ export default function HomeMe() {
       >
         {/* Left side: Retro computer */}
         <div
-          className="z-10 flex items-center justify-center justify-start ml-28 mb-4 mr-8 w-full w-1/2 md:items-start"
+          className="z-10 flex items-center justify-center justify-start ml-40 mb-4 mr-8 w-full w-1/2 md:items-start"
           style={{
             minWidth: 0,
             maxWidth: 350,
@@ -26,7 +62,7 @@ export default function HomeMe() {
         </div>
 
         {/* Main content, right side */}
-        <div className="z-10 flex flex-col justify-center items-center w-full w-1/2 text-center text-left md:items-start">
+        <div className="z-10 flex flex-col justify-center items-center px-4 ml-4 ml-8 w-full w-1/2 text-center text-left md:items-start">
           <h2
             className="mb-3 text-3xl font-bold md:text-5xl"
             style={{ position: "relative" }}
@@ -39,6 +75,7 @@ export default function HomeMe() {
               position: "relative",
               textAlign: "justify",
               maxWidth: 540,
+              width: "100%",
             }}
           >
             Hello! I'm a passionate developer who loves building interactive
