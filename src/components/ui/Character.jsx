@@ -32,7 +32,6 @@ export default function Character() {
 }
 *
 {
-    /* border:var(--border-var); */
 }
 body
 {
@@ -125,14 +124,12 @@ text-align:center;
     position:absolute;
     width:600px;
     height:400px;
-    /* border:var(--border-var); */
 }
 .floor
 {
     top:84%;
     width:200px;
     height:5px;
-    /* border:var(--border-var); */
     background: var(--floor-color,#cbdde7);
     border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -149,7 +146,6 @@ text-align:center;
     position: absolute;
     top: 82%;
     width: 300px;
-    /* increased from 240px to 300px to fit more grass */
     height: 30px;
     left: 50%;
     transform: translate(-50%,0%);
@@ -164,7 +160,6 @@ text-align:center;
     width: 6px;
     border-radius: 4px 4px 12px 12px;
 }
-/* Existing blades */
 .grass-blade1 {
     height: 18px; left: 20px;
     background: linear-gradient(160deg, var(--grass-green2) 70%, var(--grass-green1) 100%);
@@ -196,7 +191,6 @@ text-align:center;
     background: linear-gradient(180deg, var(--grass-green1) 70%, var(--grass-green3) 100%);
     transform: rotate(-14deg) scaleX(1.03);
 }
-/* More grass blades for variety */
 .grass-blade7 {
     height: 10px; left: 60px;
     background: linear-gradient(170deg, var(--grass-green2) 30%, var(--grass-green3) 100%);
@@ -233,8 +227,6 @@ text-align:center;
     top:10%;
     width:150px;
     height:65%;
-    /* border:var(--border-var); */
-    /* background: var(--secondary-color); */
     z-index: 10;
 }
 .character__head
@@ -243,8 +235,6 @@ text-align:center;
     width:100%;
     height:60%;
     z-index:5;
-    /* border:var(--border-var); */
-    /* background:var(--skin-color,#f6c09b); */
 }
 .character__body
 {
@@ -252,9 +242,7 @@ text-align:center;
     top:60%;
     width:70%;
     height:50%;
-    /* border:var(--border-var); */
     left:60%;
-    /* background:var(--body-color,#60295d); */
     z-index:1;
 }
 .cap
@@ -264,15 +252,12 @@ text-align:center;
     left:50%;
     width:100%;
     height: 60%;
-    /* background:var(--cap-color,#d03e38); */
-    /* border: var(--border-var); */
     transform:translate(-50%,0%);
     -webkit-transform:translate(-50%,0%);
     -moz-transform:translate(-50%,0%);
     -ms-transform:translate(-50%,0%);
     -o-transform:translate(-50%,0%);
     z-index: 10;
-    /* Cap bob animation */
     animation: cap-bob 10s ease-in-out infinite alternate;
 }
 
@@ -299,7 +284,6 @@ text-align:center;
     height:80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    /* Subtle top shimmer animation */
     animation: cap-top-shimmer 2.8s linear infinite alternate;
 }
 
@@ -447,9 +431,7 @@ text-align:center;
     -moz-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
     -o-transform: translate(0%, -50%);
-    /* Blinking animation */
     animation: eye-blink 4s infinite;
-    /* Optional: desync eyes just a bit for realism */
 }
 
 @keyframes eye-blink {
@@ -469,19 +451,12 @@ text-align:center;
 
 .eye--left {
     left: 15%;
-    animation-delay: 0s; /* Sync blink */
+    animation-delay: 0s;
 }
 .eye--right{
     left: 60%;
-    animation-delay: 0.15s; /* Slightly offset blink for realism */
+    animation-delay: 0.15s;
 }
-
-/* Remove eye-patch styles 
-.eye--right::before,
-.eye--right::after{
-    display: none;
-}
-*/
 
 .character__ear
 {
@@ -494,7 +469,7 @@ text-align:center;
 }
 .ear--left{
     left:-11%;
-    width:13px;/*Had to do for the layering problem*/
+    width:13px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background: var(--skin-dark-color);
@@ -610,9 +585,6 @@ text-align:center;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    /* Add waving animation to both hands (will only be seen if .hand--right/.hand--left is present) */
-    /* Use transform-origin to create a waving/raise effect! */
-    /* We'll override specifics in .hand--right/.hand--left for separate animations */
 }
 .character__hand::after{
     position: absolute;
@@ -628,15 +600,12 @@ text-align:center;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-/* Right hand animation */
 .hand--right
 {
     left:73%;
     z-index: 20;
     background: var(--skin-bright-color);
-    /* Let the right hand wave up and down slightly */
     transform-origin: 25% 15%;
-    /* pivot close to left-top of the "hand" */
     animation: hand-wave-right 40s cubic-bezier(.45,0,.65,1.1) infinite alternate;
 }
 @keyframes hand-wave-right {
@@ -652,7 +621,6 @@ text-align:center;
 {
     left:-13%;
     background: var(--skin-dark-color);
-    /* Left hand small-side sway, less dramatic than right */
     transform-origin: 85% 15%;
     animation: hand-sway-left 40s cubic-bezier(.48,0,.68,1.1) infinite alternate;
 }
@@ -723,16 +691,13 @@ text-align:center;
 
       <div className="container centered">
         <div className="floor centered-horizontal"></div>
-        {/* Start: Grass beside the hero */}
         <div className="grass-group">
-          {/* Left grass clump */}
           <div className="grass-blade grass-blade1"></div>
           <div className="grass-blade grass-blade2"></div>
           <div className="grass-blade grass-blade3"></div>
           <div className="grass-blade grass-blade7"></div>
           <div className="grass-blade grass-blade8"></div>
           <div className="grass-blade grass-blade9"></div>
-          {/* Right grass clump */}
           <div className="grass-blade grass-blade4"></div>
           <div className="grass-blade grass-blade5"></div>
           <div className="grass-blade grass-blade6"></div>
@@ -740,13 +705,10 @@ text-align:center;
           <div className="grass-blade grass-blade11"></div>
           <div className="grass-blade grass-blade12"></div>
         </div>
-        {/* End: Grass beside the hero */}
         <div className="character centered-horizontal">
           <div className="character__head centered-horizontal">
             <div className="cap">
-              <div className="top--dark cap__top">
-                {/* <div className="blueRibbon"></div> */}
-              </div>
+              <div className="top--dark cap__top"></div>
               <div className="top--bright cap__top">
                 <div className="cap__hair"></div>
               </div>

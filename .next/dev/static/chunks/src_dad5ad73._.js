@@ -606,7 +606,6 @@ function Character() {
 }
 *
 {
-    /* border:var(--border-var); */
 }
 body
 {
@@ -699,14 +698,12 @@ text-align:center;
     position:absolute;
     width:600px;
     height:400px;
-    /* border:var(--border-var); */
 }
 .floor
 {
     top:84%;
     width:200px;
     height:5px;
-    /* border:var(--border-var); */
     background: var(--floor-color,#cbdde7);
     border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -723,7 +720,6 @@ text-align:center;
     position: absolute;
     top: 82%;
     width: 300px;
-    /* increased from 240px to 300px to fit more grass */
     height: 30px;
     left: 50%;
     transform: translate(-50%,0%);
@@ -738,7 +734,6 @@ text-align:center;
     width: 6px;
     border-radius: 4px 4px 12px 12px;
 }
-/* Existing blades */
 .grass-blade1 {
     height: 18px; left: 20px;
     background: linear-gradient(160deg, var(--grass-green2) 70%, var(--grass-green1) 100%);
@@ -770,7 +765,6 @@ text-align:center;
     background: linear-gradient(180deg, var(--grass-green1) 70%, var(--grass-green3) 100%);
     transform: rotate(-14deg) scaleX(1.03);
 }
-/* More grass blades for variety */
 .grass-blade7 {
     height: 10px; left: 60px;
     background: linear-gradient(170deg, var(--grass-green2) 30%, var(--grass-green3) 100%);
@@ -807,8 +801,6 @@ text-align:center;
     top:10%;
     width:150px;
     height:65%;
-    /* border:var(--border-var); */
-    /* background: var(--secondary-color); */
     z-index: 10;
 }
 .character__head
@@ -817,8 +809,6 @@ text-align:center;
     width:100%;
     height:60%;
     z-index:5;
-    /* border:var(--border-var); */
-    /* background:var(--skin-color,#f6c09b); */
 }
 .character__body
 {
@@ -826,9 +816,7 @@ text-align:center;
     top:60%;
     width:70%;
     height:50%;
-    /* border:var(--border-var); */
     left:60%;
-    /* background:var(--body-color,#60295d); */
     z-index:1;
 }
 .cap
@@ -838,15 +826,12 @@ text-align:center;
     left:50%;
     width:100%;
     height: 60%;
-    /* background:var(--cap-color,#d03e38); */
-    /* border: var(--border-var); */
     transform:translate(-50%,0%);
     -webkit-transform:translate(-50%,0%);
     -moz-transform:translate(-50%,0%);
     -ms-transform:translate(-50%,0%);
     -o-transform:translate(-50%,0%);
     z-index: 10;
-    /* Cap bob animation */
     animation: cap-bob 10s ease-in-out infinite alternate;
 }
 
@@ -873,7 +858,6 @@ text-align:center;
     height:80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    /* Subtle top shimmer animation */
     animation: cap-top-shimmer 2.8s linear infinite alternate;
 }
 
@@ -1021,9 +1005,7 @@ text-align:center;
     -moz-transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%);
     -o-transform: translate(0%, -50%);
-    /* Blinking animation */
     animation: eye-blink 4s infinite;
-    /* Optional: desync eyes just a bit for realism */
 }
 
 @keyframes eye-blink {
@@ -1043,19 +1025,12 @@ text-align:center;
 
 .eye--left {
     left: 15%;
-    animation-delay: 0s; /* Sync blink */
+    animation-delay: 0s;
 }
 .eye--right{
     left: 60%;
-    animation-delay: 0.15s; /* Slightly offset blink for realism */
+    animation-delay: 0.15s;
 }
-
-/* Remove eye-patch styles 
-.eye--right::before,
-.eye--right::after{
-    display: none;
-}
-*/
 
 .character__ear
 {
@@ -1068,7 +1043,7 @@ text-align:center;
 }
 .ear--left{
     left:-11%;
-    width:13px;/*Had to do for the layering problem*/
+    width:13px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background: var(--skin-dark-color);
@@ -1184,9 +1159,6 @@ text-align:center;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    /* Add waving animation to both hands (will only be seen if .hand--right/.hand--left is present) */
-    /* Use transform-origin to create a waving/raise effect! */
-    /* We'll override specifics in .hand--right/.hand--left for separate animations */
 }
 .character__hand::after{
     position: absolute;
@@ -1202,15 +1174,12 @@ text-align:center;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-/* Right hand animation */
 .hand--right
 {
     left:73%;
     z-index: 20;
     background: var(--skin-bright-color);
-    /* Let the right hand wave up and down slightly */
     transform-origin: 25% 15%;
-    /* pivot close to left-top of the "hand" */
     animation: hand-wave-right 40s cubic-bezier(.45,0,.65,1.1) infinite alternate;
 }
 @keyframes hand-wave-right {
@@ -1226,7 +1195,6 @@ text-align:center;
 {
     left:-13%;
     background: var(--skin-dark-color);
-    /* Left hand small-side sway, less dramatic than right */
     transform-origin: 85% 15%;
     animation: hand-sway-left 40s cubic-bezier(.48,0,.68,1.1) infinite alternate;
 }
@@ -1306,7 +1274,7 @@ text-align:center;
                         className: "floor centered-horizontal"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/Character.jsx",
-                        lineNumber: 725,
+                        lineNumber: 693,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1316,90 +1284,90 @@ text-align:center;
                                 className: "grass-blade grass-blade1"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 729,
+                                lineNumber: 695,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade2"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 730,
+                                lineNumber: 696,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade3"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 731,
+                                lineNumber: 697,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade7"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 732,
+                                lineNumber: 698,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade8"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 733,
+                                lineNumber: 699,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade9"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 734,
+                                lineNumber: 700,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 736,
+                                lineNumber: 701,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade5"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 737,
+                                lineNumber: 702,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade6"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 738,
+                                lineNumber: 703,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade10"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 739,
+                                lineNumber: 704,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade11"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 740,
+                                lineNumber: 705,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grass-blade grass-blade12"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 741,
+                                lineNumber: 706,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ui/Character.jsx",
-                        lineNumber: 727,
+                        lineNumber: 694,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1415,7 +1383,7 @@ text-align:center;
                                                 className: "top--dark cap__top"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                                lineNumber: 747,
+                                                lineNumber: 711,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1424,60 +1392,60 @@ text-align:center;
                                                     className: "cap__hair"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ui/Character.jsx",
-                                                    lineNumber: 751,
+                                                    lineNumber: 713,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                                lineNumber: 750,
+                                                lineNumber: 712,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "cap__yellow yellow--dark"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                                lineNumber: 753,
+                                                lineNumber: 715,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "cap__yellow yellow--bright"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                                lineNumber: 754,
+                                                lineNumber: 716,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "bottom--dark cap__bottom"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                                lineNumber: 755,
+                                                lineNumber: 717,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "bottom--bright cap__bottom"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                                lineNumber: 756,
+                                                lineNumber: 718,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 746,
+                                        lineNumber: 710,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "character__hair hair--left"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 758,
+                                        lineNumber: 720,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "character__hair hair--right"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 759,
+                                        lineNumber: 721,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1489,45 +1457,45 @@ text-align:center;
                                                     className: "character__eye eye--left"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ui/Character.jsx",
-                                                    lineNumber: 762,
+                                                    lineNumber: 724,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "character__eye eye--right"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ui/Character.jsx",
-                                                    lineNumber: 763,
+                                                    lineNumber: 725,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ui/Character.jsx",
-                                            lineNumber: 761,
+                                            lineNumber: 723,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 760,
+                                        lineNumber: 722,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "character__ear ear--left"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 766,
+                                        lineNumber: 728,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "character__ear ear--right"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 767,
+                                        lineNumber: 729,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 745,
+                                lineNumber: 709,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1537,14 +1505,14 @@ text-align:center;
                                         className: "character__hand hand--left"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 770,
+                                        lineNumber: 732,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "character__hand hand--right"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 771,
+                                        lineNumber: 733,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1553,12 +1521,12 @@ text-align:center;
                                             className: "character__shirt--bright"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/Character.jsx",
-                                            lineNumber: 773,
+                                            lineNumber: 735,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 772,
+                                        lineNumber: 734,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1570,57 +1538,57 @@ text-align:center;
                                                     className: "belt__button button--left centered-horizontal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ui/Character.jsx",
-                                                    lineNumber: 777,
+                                                    lineNumber: 739,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "belt__button button--right centered-horizontal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ui/Character.jsx",
-                                                    lineNumber: 778,
+                                                    lineNumber: 740,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ui/Character.jsx",
-                                            lineNumber: 776,
+                                            lineNumber: 738,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 775,
+                                        lineNumber: 737,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "character__leg leg--left"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 781,
+                                        lineNumber: 743,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "character__leg leg--right"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/Character.jsx",
-                                        lineNumber: 782,
+                                        lineNumber: 744,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ui/Character.jsx",
-                                lineNumber: 769,
+                                lineNumber: 731,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ui/Character.jsx",
-                        lineNumber: 744,
+                        lineNumber: 708,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/Character.jsx",
-                lineNumber: 724,
+                lineNumber: 692,
                 columnNumber: 7
             }, this)
         ]
@@ -1708,7 +1676,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$C
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-6 max-w-[95vw] max-w-[900px] text-[15px] font-medium leading-7 text-[17px] leading-8 text-[20px] sm:max-w-[680px] md:mt-10",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$encrypted$2d$text$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EncryptedText"], {
-                            text: "I AM A WEB DEVELOPER AND DESIGNER | PYTHON PROGRAMMING | REACT DEVELOPER | NEXT.JS DEVELOPER | NODE.JS DEVELOPER |",
+                            text: "I AM A WEB DEVELOPER AND DESIGNER | PYTHON PROGRAMMING | REACT DEVELOPER | NEXT.JS DEVELOPER ",
                             className: "",
                             revealedClassName: "",
                             encryptedClassName: "text-violet-400",
@@ -2674,10 +2642,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 var _s = __turbopack_context__.k.signature();
 ;
-// List of images (use placeholder images)
-// Update: Images should be stored in the /public directory in Next.js.
-// Make sure your images are in /public/images (relative to project root).
-// Use lowercase filenames/extensions for consistency and to prevent case issues on Vercel (Linux is case-sensitive).
 const images = [
     "/images/excel.png",
     "/images/gsap.png",
@@ -2689,7 +2653,6 @@ const images = [
     "/images/pp.png",
     "/images/sql.png"
 ];
-// Generates the CSS for the nth-child transforms (to place the figures around the carousel)
 const carouselFigureStyle = (idx, isMobile)=>{
     const z = isMobile ? 155 : 288;
     const deg = idx * 40;
@@ -2713,22 +2676,18 @@ function LoaderGallery() {
             })["LoaderGallery.useEffect"];
         }
     }["LoaderGallery.useEffect"], []);
-    // Desktop sizes (original)
     const containerWidth = 210;
     const containerHeight = 140;
     const figureWidth = 200;
     const figureHeight = 120;
     const figureLeft = 10;
     const figureTop = 10;
-    // Mobile sizes (make smaller)
-    // Reduced sizes compared to previous mobile sizes
     const mobileContainerWidth = 140;
     const mobileContainerHeight = 80;
     const mobileFigureWidth = 115;
     const mobileFigureHeight = 70;
     const mobileFigureLeft = 6;
     const mobileFigureTop = 5;
-    // Heading fontsize adapt
     const headingFontSize = isMobile ? 19 : 28;
     const headingLineHeight = isMobile ? "23px" : "32px";
     const headingMarginBottom = isMobile ? "1.7rem" : "3.5rem";
@@ -2750,7 +2709,7 @@ function LoaderGallery() {
                 children: "SKILLS IN REAL-TIME I HAVE"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 71,
+                lineNumber: 61,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2822,34 +2781,33 @@ function LoaderGallery() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                                    lineNumber: 133,
+                                    lineNumber: 123,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                                lineNumber: 119,
+                                lineNumber: 109,
                                 columnNumber: 15
                             }, this)
                         }, idx, false, {
                             fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                            lineNumber: 105,
+                            lineNumber: 95,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                    lineNumber: 94,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 84,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
                 children: `
         @import url('https://fonts.googleapis.com/css?family=Anaheim');
         .loader-gallery-container {
-          /* margin, width, height, relative, perspective set inline */
         }
         .loader-gallery-carousel:hover {
           animation-play-state: paused;
@@ -2867,7 +2825,6 @@ function LoaderGallery() {
           background-image: none !important;
         }
         .violet-gradient-border {
-          /* border and box-shadow set in inline style */
         }
         @media (max-width: 768px) {
           .loader-gallery-container {
@@ -2877,7 +2834,6 @@ function LoaderGallery() {
             min-height: unset !important;
           }
           .loader-gallery-carousel {
-            /* No change for carousel root */
           }
           .loader-gallery-container h1,
           .loader-gallery-container .mb-6 {
@@ -2889,13 +2845,13 @@ function LoaderGallery() {
       `
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-                lineNumber: 163,
+                lineNumber: 153,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/LoaderGallery.jsx",
-        lineNumber: 64,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
@@ -2981,7 +2937,6 @@ body {
   opacity: 10;
   transition: opacity 0.5s;
 }
-/* Add a class for the text under the clock, matching the 3D angle */
 .clock-caption {
   margin-top: 30px;
   text-align: center;
@@ -2990,7 +2945,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.05em;
   transform: rotateY(24deg) rotateX(-3deg) translate3d(180px, 325px, -40px);
-  /* Perspective on the parent handles the 3D effect */
   text-shadow: 0 4px 20px #8f00ff77, 0 1px 12px #000c;
   user-select: none;
   pointer-events: none;
@@ -3016,17 +2970,14 @@ body {
     transform: none !important;
     justify-content: center !important;
     margin-top: 1.5rem !important;
-    /* scale the clock down in mobile, smaller than before */
     scale: 0.6 !important;
   }
   .digit {
-    /* Reduce digit margin for smaller mobile clock */
     margin: 0 4px 0.5px 5px !important;
   }
   .separator {
     margin: 0 3px !important;
   }
-  /* Make clock segments smaller on mobile for a smaller clock face */
   .cell,
   .active.cell {
     width: 16px !important;
@@ -3044,7 +2995,6 @@ body {
     justify-content: center !important;
     width: 100vw !important;
     background: #000 !important;
-    /* Add extra margin to provide gap between clock and loader gallery */
     margin-bottom: 2.5rem !important;
   }
 }
@@ -3220,7 +3170,6 @@ function DigitalClock() {
             })["DigitalClock.useEffect"];
         }
     }["DigitalClock.useEffect"], []);
-    // Mobile detection logic
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "DigitalClock.useEffect": ()=>{
             function checkMobile() {
@@ -3247,13 +3196,13 @@ function DigitalClock() {
                         className: classNames.trim()
                     }, cellIdx, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 248,
+                        lineNumber: 241,
                         columnNumber: 18
                     }, this);
                 })
             }, rowIdx, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 237,
+                lineNumber: 230,
                 columnNumber: 7
             }, this));
     }
@@ -3263,12 +3212,12 @@ function DigitalClock() {
                         className: cell.className
                     }, cellIdx, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 258,
+                        lineNumber: 251,
                         columnNumber: 11
                     }, this))
             }, rowIdx, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 256,
+                lineNumber: 249,
                 columnNumber: 7
             }, this));
     }
@@ -3278,7 +3227,7 @@ function DigitalClock() {
                 children: clockCSS
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 266,
+                lineNumber: 259,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3314,28 +3263,23 @@ function DigitalClock() {
                                     transform: isMobile ? "none" : "rotateY(24deg) rotateX(-3deg) translate3d(180px, 310px, -20px)",
                                     justifyContent: isMobile ? "center" : undefined,
                                     marginTop: isMobile ? "1.5rem" : undefined,
-                                    // On mobile, scale up the clock more than before (was 0.6, now 0.85)
                                     scale: isMobile ? "4" : undefined
                                 },
                                 children: digitIDs.map((id, idx, arr)=>{
-                                    // Remove gap after the hour-minute separator
-                                    // idx=2 is the first separator (: between hours and mins)
-                                    // Remove margin-right for "h2" (idx=1) and margin-left/right for first "sep" (idx=2) and for min1 (idx=3)
                                     if (id === "sep" && idx === 2) {
-                                        // This is the hour-minute separator
                                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "digit separator no-gap",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
                                                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                                lineNumber: 314,
+                                                lineNumber: 302,
                                                 columnNumber: 21
                                             }, this)
                                         }, `sep-${idx}`, false, {
                                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                            lineNumber: 313,
+                                            lineNumber: 301,
                                             columnNumber: 19
                                         }, this);
-                                    } else if (idx === 1 /* h2 */ ) {
+                                    } else if (idx === 1) {
                                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             id: id,
                                             className: "digit no-gap",
@@ -3343,18 +3287,47 @@ function DigitalClock() {
                                                 digit: getDigitVal(time, id)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                                lineNumber: 320,
+                                                lineNumber: 308,
                                                 columnNumber: 21
                                             }, this)
                                         }, id, false, {
                                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                            lineNumber: 319,
+                                            lineNumber: 307,
                                             columnNumber: 19
                                         }, this);
-                                    } else if (idx === 3 /* m1 */ ) {
+                                    } else if (idx === 3) {
                                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             id: id,
                                             className: "digit no-gap",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
+                                                digit: getDigitVal(time, id)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                                lineNumber: 314,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, id, false, {
+                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                            lineNumber: 313,
+                                            columnNumber: 19
+                                        }, this);
+                                    } else if (id === "sep") {
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "digit separator",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
+                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                                lineNumber: 320,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, `sep-${idx}`, false, {
+                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
+                                            lineNumber: 319,
+                                            columnNumber: 19
+                                        }, this);
+                                    } else {
+                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            id: id,
+                                            className: "digit",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
                                                 digit: getDigitVal(time, id)
                                             }, void 0, false, {
@@ -3367,40 +3340,11 @@ function DigitalClock() {
                                             lineNumber: 325,
                                             columnNumber: 19
                                         }, this);
-                                    } else if (id === "sep") {
-                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "digit separator",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Separator, {}, void 0, false, {
-                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                                lineNumber: 334,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, `sep-${idx}`, false, {
-                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                            lineNumber: 333,
-                                            columnNumber: 19
-                                        }, this);
-                                    } else {
-                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            id: id,
-                                            className: "digit",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DigitRows, {
-                                                digit: getDigitVal(time, id)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                                lineNumber: 340,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, id, false, {
-                                            fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                            lineNumber: 339,
-                                            columnNumber: 19
-                                        }, this);
                                     }
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                lineNumber: 294,
+                                lineNumber: 287,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3414,13 +3358,13 @@ function DigitalClock() {
                                 children: '"LEARNING DOESN’T PAUSE"'
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                                lineNumber: 347,
+                                lineNumber: 332,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 279,
+                        lineNumber: 272,
                         columnNumber: 9
                     }, this),
                     isMobile ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3434,17 +3378,16 @@ function DigitalClock() {
                             width: "100vw",
                             zIndex: 3,
                             background: "#000",
-                            // Add extra margin to create gap from clock above
                             marginBottom: "2.5rem"
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$LoaderGallery$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                            lineNumber: 380,
+                            lineNumber: 363,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 365,
+                        lineNumber: 349,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
@@ -3457,18 +3400,18 @@ function DigitalClock() {
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$LoaderGallery$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                            lineNumber: 393,
+                            lineNumber: 376,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                        lineNumber: 383,
+                        lineNumber: 366,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/DigitalClock.jsx",
-                lineNumber: 267,
+                lineNumber: 260,
                 columnNumber: 7
             }, this)
         ]
@@ -3493,14 +3436,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 ;
-// Utility `cn` merges Tailwind and conditional class names
 function cn(...classes) {
     return classes.filter(Boolean).join(" ");
 }
 function GlowyDivider({ showBuckle = false, direction = "bottom" }) {
-    // Glowing gradient for the line "light"
-    // Optionally flip gradient direction for top/bottom
-    // Decreased light color and alpha in gradient
     const gradientLight = direction === "bottom" ? "bg-gradient-to-r from-transparent via-purple-300/40 to-transparent" : "bg-gradient-to-l from-transparent via-purple-300/40 to-transparent";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "relative w-full",
@@ -3510,8 +3449,7 @@ function GlowyDivider({ showBuckle = false, direction = "bottom" }) {
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: cn("absolute left-0 w-full h-[2px] pointer-events-none", gradientLight, "blur-[2px]" // decreased blur to reduce glow
-                ),
+                className: cn("absolute left-0 w-full h-[2px] pointer-events-none", gradientLight, "blur-[2px]"),
                 style: {
                     top: 0,
                     boxShadow: "0 0 12px 2px rgba(168,85,247,0.22), 0 0 4px 0 rgba(255,255,255,0.11)",
@@ -3520,7 +3458,7 @@ function GlowyDivider({ showBuckle = false, direction = "bottom" }) {
                 "aria-hidden": "true"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/GlowyDivider.jsx",
-                lineNumber: 29,
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3532,7 +3470,7 @@ function GlowyDivider({ showBuckle = false, direction = "bottom" }) {
                 "aria-hidden": "true"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/GlowyDivider.jsx",
-                lineNumber: 43,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             showBuckle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3542,27 +3480,26 @@ function GlowyDivider({ showBuckle = false, direction = "bottom" }) {
                         className: "h-1 w-8 bg-purple-300/40 rounded-xl blur-[1.5px] shadow-[0_0_8px_3px_rgba(168,85,247,0.25)]"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/GlowyDivider.jsx",
-                        lineNumber: 56,
+                        lineNumber: 45,
                         columnNumber: 11
                     }, this),
-                    " ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute h-[2.5px] w-8 bg-purple-400/80 rounded-xl"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/GlowyDivider.jsx",
-                        lineNumber: 58,
+                        lineNumber: 46,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/GlowyDivider.jsx",
-                lineNumber: 55,
+                lineNumber: 44,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/GlowyDivider.jsx",
-        lineNumber: 27,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
@@ -3875,26 +3812,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-/**
- * How to change the starting position of the model:
- *
- * - To change where the model appears (its "starting position"),
- *   update the `modelPosition` prop when you use <RetroComputer/>.
- *   This sets the [x, y, z] position in 3D space.
- *
- *      <RetroComputer modelPosition={[x, y, z]} />
- *
- * - To rotate the model initially, change the `modelRotation` prop:
- *
- *      <RetroComputer modelRotation={[rx, ry, rz]} />
- *
- * - To move the camera's starting viewpoint (like zoom or angle),
- *   change the `cameraPosition` prop:
- *
- *      <RetroComputer cameraPosition={[camX, camY, camZ]} />
- *
- * --- DEFAULTS BELOW ---
- */ function Model({ position = [
+function Model({ position = [
     0,
     -1,
     0
@@ -3905,13 +3823,11 @@ var _s = __turbopack_context__.k.signature();
 ], scale = 3 }) {
     _s();
     const { scene } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$three$2f$drei$2f$core$2f$Gltf$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGLTF"])("/models/retro_computer/scene.gltf");
-    // Ensure all materials are double-sided and depth correct
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Model.useEffect": ()=>{
             scene.traverse({
                 "Model.useEffect": (child)=>{
                     if (child.isMesh) {
-                        // Set double side to prevent faces from disappearing
                         if (Array.isArray(child.material)) {
                             child.material.forEach({
                                 "Model.useEffect": (mat)=>{
@@ -3936,7 +3852,6 @@ var _s = __turbopack_context__.k.signature();
     }["Model.useEffect"], [
         scene
     ]);
-    // position/rotation get passed as props here
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("primitive", {
         object: scene,
         scale: scale,
@@ -3944,7 +3859,7 @@ var _s = __turbopack_context__.k.signature();
         rotation: rotation
     }, void 0, false, {
         fileName: "[project]/src/components/ui/RetroComputer.jsx",
-        lineNumber: 58,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
@@ -3984,7 +3899,7 @@ function RetroComputer({ modelPosition = [
       `
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/RetroComputer.jsx",
-                lineNumber: 85,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4013,7 +3928,7 @@ function RetroComputer({ modelPosition = [
                             intensity: 0.2
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/RetroComputer.jsx",
-                            lineNumber: 102,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("directionalLight", {
@@ -4025,7 +3940,7 @@ function RetroComputer({ modelPosition = [
                             intensity: 1
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/RetroComputer.jsx",
-                            lineNumber: 103,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Model, {
@@ -4034,7 +3949,7 @@ function RetroComputer({ modelPosition = [
                             scale: modelScale
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/RetroComputer.jsx",
-                            lineNumber: 105,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$three$2f$drei$2f$core$2f$OrbitControls$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["OrbitControls"], {
@@ -4042,44 +3957,27 @@ function RetroComputer({ modelPosition = [
                             makeDefault: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/RetroComputer.jsx",
-                            lineNumber: 110,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/RetroComputer.jsx",
-                    lineNumber: 96,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/RetroComputer.jsx",
-                lineNumber: 92,
+                lineNumber: 65,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/RetroComputer.jsx",
-        lineNumber: 78,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
-} /*
-HOW TO CHANGE THE STARTING POSITION OF THE MODEL:
-
-  <RetroComputer modelPosition={[x, y, z]} />
-
-  Example:
-    <RetroComputer modelPosition={[2, 0, -3]} />
-
-You can also adjust rotation and camera like so:
-
-  <RetroComputer
-    modelPosition={[1, -2, 0]}
-    modelRotation={[0, Math.PI / 4, 0]}
-    cameraPosition={[2, 7, 21]}
-  />
-
-Default starting position is [0, -1, 0].
-*/ 
+}
 _c1 = RetroComputer;
 var _c, _c1;
 __turbopack_context__.k.register(_c, "Model");

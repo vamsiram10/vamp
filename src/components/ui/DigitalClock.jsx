@@ -61,7 +61,6 @@ body {
   opacity: 10;
   transition: opacity 0.5s;
 }
-/* Add a class for the text under the clock, matching the 3D angle */
 .clock-caption {
   margin-top: 30px;
   text-align: center;
@@ -70,7 +69,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.05em;
   transform: rotateY(24deg) rotateX(-3deg) translate3d(180px, 325px, -40px);
-  /* Perspective on the parent handles the 3D effect */
   text-shadow: 0 4px 20px #8f00ff77, 0 1px 12px #000c;
   user-select: none;
   pointer-events: none;
@@ -96,17 +94,14 @@ body {
     transform: none !important;
     justify-content: center !important;
     margin-top: 1.5rem !important;
-    /* scale the clock down in mobile, smaller than before */
     scale: 0.6 !important;
   }
   .digit {
-    /* Reduce digit margin for smaller mobile clock */
     margin: 0 4px 0.5px 5px !important;
   }
   .separator {
     margin: 0 3px !important;
   }
-  /* Make clock segments smaller on mobile for a smaller clock face */
   .cell,
   .active.cell {
     width: 16px !important;
@@ -124,7 +119,6 @@ body {
     justify-content: center !important;
     width: 100vw !important;
     background: #000 !important;
-    /* Add extra margin to provide gap between clock and loader gallery */
     margin-bottom: 2.5rem !important;
   }
 }
@@ -222,7 +216,6 @@ export default function DigitalClock() {
     return () => clearInterval(interval);
   }, []);
 
-  // Mobile detection logic
   useEffect(() => {
     function checkMobile() {
       setIsMobile(window.innerWidth <= 768);
@@ -299,36 +292,29 @@ export default function DigitalClock() {
                 : "rotateY(24deg) rotateX(-3deg) translate3d(180px, 310px, -20px)",
               justifyContent: isMobile ? "center" : undefined,
               marginTop: isMobile ? "1.5rem" : undefined,
-              // On mobile, scale up the clock more than before (was 0.6, now 0.85)
               scale: isMobile ? "4" : undefined,
             }}
           >
             {digitIDs.map((id, idx, arr) => {
-              // Remove gap after the hour-minute separator
-              // idx=2 is the first separator (: between hours and mins)
-              // Remove margin-right for "h2" (idx=1) and margin-left/right for first "sep" (idx=2) and for min1 (idx=3)
               if (id === "sep" && idx === 2) {
-                // This is the hour-minute separator
                 return (
                   <div className="digit separator no-gap" key={`sep-${idx}`}>
                     <Separator />
                   </div>
                 );
-              } else if (idx === 1 /* h2 */) {
+              } else if (idx === 1) {
                 return (
                   <div id={id} className="digit no-gap" key={id}>
                     <DigitRows digit={getDigitVal(time, id)} />
                   </div>
                 );
-              } else if (idx === 3 /* m1 */) {
+              } else if (idx === 3) {
                 return (
                   <div id={id} className="digit no-gap" key={id}>
                     <DigitRows digit={getDigitVal(time, id)} />
                   </div>
                 );
-              }
-              // The other separator should retain their margin/gap
-              else if (id === "sep") {
+              } else if (id === "sep") {
                 return (
                   <div className="digit separator" key={`sep-${idx}`}>
                     <Separator />
@@ -343,7 +329,6 @@ export default function DigitalClock() {
               }
             })}
           </div>
-          {/* Caption text below the clock, with the same 3D transform */}
           <div
             className="clock-caption"
             style={{
@@ -360,7 +345,6 @@ export default function DigitalClock() {
             "LEARNING DOESN’T PAUSE"
           </div>
         </div>
-        {/* Show LoaderGallery below the clock in mobile, to the side in desktop */}
         {isMobile ? (
           <div
             className="loader-gallery-mobile"
@@ -373,7 +357,6 @@ export default function DigitalClock() {
               width: "100vw",
               zIndex: 3,
               background: "#000",
-              // Add extra margin to create gap from clock above
               marginBottom: "2.5rem",
             }}
           >

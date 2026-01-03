@@ -1,9 +1,5 @@
 import React from "react";
 
-// List of images (use placeholder images)
-// Update: Images should be stored in the /public directory in Next.js.
-// Make sure your images are in /public/images (relative to project root).
-// Use lowercase filenames/extensions for consistency and to prevent case issues on Vercel (Linux is case-sensitive).
 const images = [
   "/images/excel.png",
   "/images/gsap.png",
@@ -16,7 +12,6 @@ const images = [
   "/images/sql.png",
 ];
 
-// Generates the CSS for the nth-child transforms (to place the figures around the carousel)
 const carouselFigureStyle = (idx, isMobile) => {
   const z = isMobile ? 155 : 288;
   const deg = idx * 40;
@@ -38,7 +33,6 @@ export default function LoaderGallery() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Desktop sizes (original)
   const containerWidth = 210;
   const containerHeight = 140;
   const figureWidth = 200;
@@ -46,8 +40,6 @@ export default function LoaderGallery() {
   const figureLeft = 10;
   const figureTop = 10;
 
-  // Mobile sizes (make smaller)
-  // Reduced sizes compared to previous mobile sizes
   const mobileContainerWidth = 140;
   const mobileContainerHeight = 80;
   const mobileFigureWidth = 115;
@@ -55,7 +47,6 @@ export default function LoaderGallery() {
   const mobileFigureLeft = 6;
   const mobileFigureTop = 5;
 
-  // Heading fontsize adapt
   const headingFontSize = isMobile ? 19 : 28;
   const headingLineHeight = isMobile ? "23px" : "32px";
   const headingMarginBottom = isMobile ? "1.7rem" : "3.5rem";
@@ -64,10 +55,9 @@ export default function LoaderGallery() {
     <div
       style={{
         minHeight: "60vh",
-        background: "#000", // Make main background black
+        background: "#000",
       }}
     >
-      {/* Heading h1 */}
       <h1
         className="mb-6 font-extrabold text-center uppercase"
         style={{
@@ -163,7 +153,6 @@ export default function LoaderGallery() {
       <style>{`
         @import url('https://fonts.googleapis.com/css?family=Anaheim');
         .loader-gallery-container {
-          /* margin, width, height, relative, perspective set inline */
         }
         .loader-gallery-carousel:hover {
           animation-play-state: paused;
@@ -181,7 +170,6 @@ export default function LoaderGallery() {
           background-image: none !important;
         }
         .violet-gradient-border {
-          /* border and box-shadow set in inline style */
         }
         @media (max-width: 768px) {
           .loader-gallery-container {
@@ -191,7 +179,6 @@ export default function LoaderGallery() {
             min-height: unset !important;
           }
           .loader-gallery-carousel {
-            /* No change for carousel root */
           }
           .loader-gallery-container h1,
           .loader-gallery-container .mb-6 {

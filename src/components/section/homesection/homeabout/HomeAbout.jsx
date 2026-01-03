@@ -39,7 +39,7 @@ const HomeAbout = () => {
         {/* Subtitle - now using EncryptedText */}
         <div className="mt-6 max-w-[95vw] max-w-[900px] text-[15px] font-medium leading-7 text-[17px] leading-8 text-[20px] sm:max-w-[680px] md:mt-10">
           <EncryptedText
-            text="I AM A WEB DEVELOPER AND DESIGNER | PYTHON PROGRAMMING | REACT DEVELOPER | NEXT.JS DEVELOPER | NODE.JS DEVELOPER |"
+            text="I AM A WEB DEVELOPER AND DESIGNER | PYTHON PROGRAMMING | REACT DEVELOPER | NEXT.JS DEVELOPER "
             className=""
             revealedClassName=""
             encryptedClassName="text-violet-400"

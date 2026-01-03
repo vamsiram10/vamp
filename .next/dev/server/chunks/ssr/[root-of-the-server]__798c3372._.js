@@ -175,9 +175,6 @@ function ParticleCanvas() {
             "#ff41ff",
             "#8f533f"
         ];
-        // ----------------------
-        // Event Listeners
-        // ----------------------
         function onMouseMove(event) {
             mouse.x = event.clientX;
             mouse.y = event.clientY;
@@ -186,7 +183,6 @@ function ParticleCanvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             init();
-            // Update loading text overlay position if present
             if (textRef.current) {
                 textRef.current.style.left = `${window.innerWidth / 2}px`;
                 textRef.current.style.top = `${window.innerHeight / 2}px`;
@@ -194,25 +190,19 @@ function ParticleCanvas() {
         }
         window.addEventListener("mousemove", onMouseMove);
         window.addEventListener("resize", onResize);
-        // ----------------------
-        // Utility Functions
-        // ----------------------
         function randomIntFromRange(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
         }
         function randomColor(colors) {
             return colors[Math.floor(Math.random() * colors.length)];
         }
-        // ----------------------
-        // Particle Object
-        // ----------------------
         function Particle(x, y, radius, color) {
             this.x = x;
             this.y = y;
             this.radius = radius;
             this.color = color;
             this.radians = Math.random() * Math.PI * 2;
-            this.velocity = 0.09; // Increased from 0.05 to 0.15 for more speed
+            this.velocity = 0.09;
             this.distanceFromCenter = randomIntFromRange(50, 120);
             this.lastMouse = {
                 x: x,
@@ -223,12 +213,9 @@ function ParticleCanvas() {
                     x: this.x,
                     y: this.y
                 };
-                // movement
                 this.radians += this.velocity;
-                // drag effect
                 this.lastMouse.x += (mouse.x - this.lastMouse.x) * 0.05;
                 this.lastMouse.y += (mouse.y - this.lastMouse.y) * 0.05;
-                // circular movement
                 this.x = this.lastMouse.x + Math.cos(this.radians) * this.distanceFromCenter;
                 this.y = this.lastMouse.y + Math.sin(this.radians) * this.distanceFromCenter;
                 this.draw(lastPoint);
@@ -243,9 +230,6 @@ function ParticleCanvas() {
                 c.closePath();
             };
         }
-        // ----------------------
-        // Initialize
-        // ----------------------
         let particles;
         function init() {
             particles = [];
@@ -254,9 +238,6 @@ function ParticleCanvas() {
                 particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
             }
         }
-        // ----------------------
-        // Animation Loop
-        // ----------------------
         function animate() {
             requestAnimationFrame(animate);
             c.fillStyle = "rgba(0,0,0,0.05)";
@@ -265,14 +246,11 @@ function ParticleCanvas() {
         }
         init();
         animate();
-        // Cleanup on component unmount
         return ()=>{
             window.removeEventListener("mousemove", onMouseMove);
             window.removeEventListener("resize", onResize);
         };
     }, []);
-    // Text styles for loading overlay
-    // Inline styles keep the overlay centered regardless of stacking context.
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         style: {
             position: "relative",
@@ -291,7 +269,7 @@ function ParticleCanvas() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/ParticleCanvas.jsx",
-                lineNumber: 148,
+                lineNumber: 120,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -313,13 +291,13 @@ function ParticleCanvas() {
                 children: "Loading"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/ParticleCanvas.jsx",
-                lineNumber: 158,
+                lineNumber: 130,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/ParticleCanvas.jsx",
-        lineNumber: 141,
+        lineNumber: 113,
         columnNumber: 5
     }, this);
 }

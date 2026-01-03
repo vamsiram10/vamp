@@ -1,13 +1,3 @@
-[00:00:02.223] Server  LOG     ⚠ Console Ninja Turbopack support is a PRO feature, currently available to community users while in preview
-[00:00:02.504] Server  LOG     ✓ Ready in 1878ms
-[00:00:08.606] Server  LOG     ○ Compiling / ...
-[00:00:09.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:02.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:07.108] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:27:39.971] Server  LOG     ✓ Compiled in 713ms
-[00:27:40.396] Browser ERROR   unhandledRejection: undefined
-[00:27:40.396] Browser ERROR   unhandledRejection: undefined
-[00:27:40.397] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:27:45.077] Browser ERROR   uncaughtError: TypeError: Failed to fetch
-[00:29:33.628] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:30:47.494] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.836] Server  LOG     ⚠ Console Ninja Turbopack support is a PRO feature, currently available to community users while in preview
+[00:00:01.077] Server  LOG     ✓ Ready in 573ms
+[00:00:09.058] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
